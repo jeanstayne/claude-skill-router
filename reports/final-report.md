@@ -108,6 +108,14 @@ Claude:
   → implementa usando skills recomendadas
 ```
 
+## Publicação no GitHub
+
+- **Repositório**: https://github.com/jeanstayne/claude-skill-router
+- **Branch**: `main`
+- **Commit**: `9a847e0`
+- **Push**: Concluído em 14/05/2026
+- **Status**: Publicado
+
 ## Pendências reais (pós-Fase 13)
 
 1. Testar MCP server no Claude Code real

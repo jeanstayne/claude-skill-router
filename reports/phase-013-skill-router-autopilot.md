@@ -266,6 +266,54 @@ Nenhum erro crítico. Pendências da Fase 12:
 
 Nenhum erro remanescente. Todos encontrados e corrigidos durante a implementação.
 
+## Publicação no GitHub
+
+### Repositório
+
+https://github.com/jeanstayne/claude-skill-router
+
+### Comandos executados
+
+```bash
+git init
+git checkout -B main
+git remote add origin https://github.com/jeanstayne/claude-skill-router.git
+git add .
+git commit -m "feat: implement claude skill router with autopilot workflow"
+git push -u origin main
+```
+
+### Branch
+
+`main`
+
+### Commit
+
+`9a847e0` — 191 arquivos, 19,019 inserções
+
+### Push
+
+Concluído em 14/05/2026. Branch `main` configurada para track `origin/main`.
+
+### .gitignore ativo
+
+Protege: `node_modules/`, `dist/`, `.env`, `.env.*`, `*.log`, `.DS_Store`, `Thumbs.db`, `*.vsix`, `backups/`, `tmp/`
+
+### Status
+
+**Concluído**
+
+### Erros encontrados
+
+Nenhum erro durante a publicação.
+
+### Pendências
+
+1. Testar MCP server no Claude Code real
+2. Testar VS Code Extension com F5
+3. Melhorar detecção de brand (nomes compostos, marcas sem capitalização)
+4. Verificar se o Claude Code carrega skills com `autonomousTrigger: true` automaticamente
+
 ## Status final
 
 **Concluído**
