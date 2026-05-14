@@ -1,0 +1,12 @@
+{
+  "id": "v0",
+  "name": "v0 (Vercel)",
+  "category": "design-engine",
+  "bestFor": ["shadcn-ui", "react-components", "dashboard", "quick-prototyping"],
+  "integrationType": ["manual-reference", "prompt-reference"],
+  "recommendedFor": ["dashboard-saas", "landing-page", "internal-system"],
+  "riskLevel": "low",
+  "useWhen": "Quando o projeto usa React + Tailwind + Shadcn/UI e precisa de componentes premium como cards, modais, tabelas e grids.",
+  "doNotUseWhen": "Quando o projeto não usa Shadcn/UI ou Tailwind. Não substitui design system completo.",
+  "notes": "v0 é excelente para gerar componentes Shadcn/UI de alta qualidade. Usar como referência de código e padrão de componente, adaptando ao contexto do projeto."
+}

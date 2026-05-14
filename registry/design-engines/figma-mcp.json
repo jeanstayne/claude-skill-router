@@ -1,0 +1,12 @@
+{
+  "id": "figma-mcp",
+  "name": "Figma (via MCP)",
+  "category": "design-engine",
+  "bestFor": ["design-to-code", "pixel-perfect-implementation", "design-handoff"],
+  "integrationType": ["mcp-if-available"],
+  "recommendedFor": ["landing-page", "institutional-site", "ecommerce-page"],
+  "riskLevel": "medium",
+  "useWhen": "Quando existe um design Figma aprovado e é necessário implementar com fidelidade. Requer Figma MCP server configurado separadamente.",
+  "doNotUseWhen": "Quando não há design no Figma, ou quando o Figma MCP não está disponível no ambiente.",
+  "notes": "O Skill Router não integra diretamente com Figma. Se o Figma MCP estiver disponível, pode ser usado em paralelo. Esta entrada serve como reconhecimento da ferramenta no ecossistema."
+}

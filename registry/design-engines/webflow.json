@@ -1,0 +1,12 @@
+{
+  "id": "webflow",
+  "name": "Webflow",
+  "category": "design-engine",
+  "bestFor": ["cms-driven-site", "marketing-site", "client-editable", "responsive-layout"],
+  "integrationType": ["manual-reference", "prompt-reference"],
+  "recommendedFor": ["institutional-site", "landing-page"],
+  "riskLevel": "low",
+  "useWhen": "Quando o site precisa de estrutura CMS-friendly, layout responsivo complexo, ou quando o cliente final precisa editar conteúdo.",
+  "doNotUseWhen": "Quando é uma aplicação web com lógica de negócio complexa (não é caso de uso do Webflow).",
+  "notes": "Referência para estrutura de CMS, coleções, páginas dinâmicas e responsividade. Sem dependência externa."
+}

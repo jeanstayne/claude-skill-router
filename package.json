@@ -1,0 +1,29 @@
+{
+  "name": "claude-skill-router",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Roteador inteligente de skills/subagents para Claude Code",
+  "workspaces": [
+    "packages/core",
+    "packages/cli",
+    "packages/mcp-server",
+    "packages/vscode-extension"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint packages/",
+    "test": "npm run test --workspaces --if-present",
+    "policy:check": "npm run audit --workspace=packages/cli --if-present",
+    "validate": "npm run typecheck && npm run lint && npm test && npm run build && npm run policy:check",
+    "clean": "npm run clean --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.59.3",
+    "vitest": "^1.6.0"
+  }
+}

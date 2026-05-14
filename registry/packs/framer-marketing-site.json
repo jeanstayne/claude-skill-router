@@ -1,0 +1,20 @@
+{
+  "id": "framer-marketing-site",
+  "name": "Framer Marketing Site",
+  "description": "Kit para sites de marketing e landing pages com estética editorial e storytelling visual.",
+  "projectTypes": ["landing-page", "institutional-site"],
+  "skills": [
+    "framer-marketing-site-director",
+    "lp-conversion-architect",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer",
+    "conversion-copywriter"
+  ],
+  "optionalSkills": ["visual-qa-reviewer"],
+  "maxSkills": 3,
+  "maxAgents": 3,
+  "suggestedDesignEngines": ["framer"]
+}

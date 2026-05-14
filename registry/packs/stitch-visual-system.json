@@ -1,0 +1,17 @@
+{
+  "id": "stitch-visual-system",
+  "name": "Stitch Visual System",
+  "description": "Kit para criação de design systems e tokens visuais multi-tema.",
+  "projectTypes": ["dashboard-saas", "internal-system", "institutional-site"],
+  "skills": [
+    "stitch-design-director",
+    "brand-visual-director"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer"
+  ],
+  "maxSkills": 2,
+  "maxAgents": 2,
+  "suggestedDesignEngines": ["google-stitch"]
+}

@@ -1,0 +1,12 @@
+{
+  "_comment": "Configuração MCP para Claude Code — coloque no .mcp.json do projeto ou em ~/.claude/.mcp.json",
+  "mcpServers": {
+    "claude-skill-router": {
+      "command": "node",
+      "args": [
+        "/path/to/claude-skill-router/packages/mcp-server/dist/index.js"
+      ],
+      "env": {}
+    }
+  }
+}

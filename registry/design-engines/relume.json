@@ -1,0 +1,12 @@
+{
+  "id": "relume",
+  "name": "Relume",
+  "category": "design-engine",
+  "bestFor": ["sitemap", "wireframe", "information-architecture", "section-planning"],
+  "integrationType": ["manual-reference", "prompt-reference"],
+  "recommendedFor": ["landing-page", "institutional-site", "ecommerce-page"],
+  "riskLevel": "low",
+  "useWhen": "Quando o projeto está na fase de planejamento e precisa definir sitemap, wireframe e sequência de seções antes da implementação.",
+  "doNotUseWhen": "Quando o projeto já tem wireframe aprovado ou quando é uma página única simples.",
+  "notes": "Relume é referência para arquitetura de informação. Usar a metodologia de planejamento (sitemap → wireframe → seções), não o produto em si."
+}

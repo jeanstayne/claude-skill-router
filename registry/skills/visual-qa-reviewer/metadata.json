@@ -1,0 +1,10 @@
+{
+  "id": "visual-qa-reviewer",
+  "name": "Visual QA Reviewer",
+  "version": "1.0.0",
+  "category": "qa",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page", "dashboard-saas"],
+  "stacks": ["react", "next", "vite", "vue", "astro", "html"],
+  "maxDefaultUse": false,
+  "description": "Revisão visual desktop, tablet, mobile — hero, CTA, contraste, responsividade, overflow, alinhamento, hierarquia."
+}

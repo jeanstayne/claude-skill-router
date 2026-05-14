@@ -1,0 +1,12 @@
+{
+  "id": "google-stitch",
+  "name": "Google Stitch",
+  "category": "design-engine",
+  "bestFor": ["design-system", "multi-brand", "component-library", "design-tokens"],
+  "integrationType": ["manual-reference", "prompt-reference"],
+  "recommendedFor": ["dashboard-saas", "internal-system", "institutional-site"],
+  "riskLevel": "low",
+  "useWhen": "Quando o projeto precisa de um design system robusto, múltiplas variações de componentes, tokens visuais bem definidos e consistência entre marcas diferentes.",
+  "doNotUseWhen": "Quando o projeto é uma landing page única que não precisa de sistema de design completo.",
+  "notes": "Referência para criação de tokens visuais, variações temáticas e documentação de design system. Não requer API externa."
+}

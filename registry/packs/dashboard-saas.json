@@ -1,0 +1,18 @@
+{
+  "id": "dashboard-saas",
+  "name": "Dashboard SaaS",
+  "description": "Kit para dashboards e painéis administrativos",
+  "projectTypes": ["dashboard-saas", "internal-system"],
+  "skills": [
+    "brand-visual-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer",
+    "accessibility-specialist"
+  ],
+  "optionalSkills": ["visual-qa-reviewer"],
+  "maxSkills": 2,
+  "maxAgents": 3
+}

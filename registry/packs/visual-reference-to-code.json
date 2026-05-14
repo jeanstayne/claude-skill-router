@@ -1,0 +1,16 @@
+{
+  "id": "visual-reference-to-code",
+  "name": "Visual Reference to Code",
+  "description": "Kit para converter referências visuais em código",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page"],
+  "skills": [
+    "brand-visual-director"
+  ],
+  "agents": [
+    "design-bridge",
+    "ui-designer",
+    "frontend-developer"
+  ],
+  "maxSkills": 1,
+  "maxAgents": 3
+}

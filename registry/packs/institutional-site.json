@@ -1,0 +1,18 @@
+{
+  "id": "institutional-site",
+  "name": "Institutional Site",
+  "description": "Kit para sites institucionais e corporativos",
+  "projectTypes": ["institutional-site"],
+  "skills": [
+    "brand-visual-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer",
+    "accessibility-specialist"
+  ],
+  "optionalSkills": ["visual-qa-reviewer"],
+  "maxSkills": 2,
+  "maxAgents": 3
+}

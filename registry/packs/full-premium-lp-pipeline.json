@@ -1,0 +1,26 @@
+{
+  "id": "full-premium-lp-pipeline",
+  "name": "Full Premium LP Pipeline",
+  "description": "Pipeline completo para landing page premium: planejamento → arquitetura → conversão → direção visual → estilo Lovable → design system → implementação → QA.",
+  "projectTypes": ["landing-page"],
+  "skills": [
+    "relume-site-architect",
+    "lp-conversion-architect",
+    "brand-visual-director",
+    "lovable-style-director",
+    "stitch-design-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer",
+    "conversion-copywriter",
+    "accessibility-specialist"
+  ],
+  "optionalSkills": ["visual-qa-reviewer", "stitch-design-director"],
+  "advanced": true,
+  "maxSkills": 6,
+  "maxAgents": 4,
+  "suggestedDesignEngines": ["relume", "lovable", "google-stitch"],
+  "note": "Pack avançado. Recomendado apenas quando o usuário solicitar explicitamente pipeline completo ou quando o projeto exigir altíssima qualidade visual."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "landing-page",
+  "name": "Landing Page Premium",
+  "description": "Kit completo para landing pages de alta conversão",
+  "projectTypes": ["landing-page"],
+  "skills": [
+    "lp-conversion-architect",
+    "brand-visual-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer",
+    "conversion-copywriter"
+  ],
+  "prompts": [
+    "lp-premium-template"
+  ],
+  "optionalSkills": [
+    "visual-qa-reviewer"
+  ],
+  "maxSkills": 3,
+  "maxAgents": 3
+}

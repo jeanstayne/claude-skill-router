@@ -1,0 +1,19 @@
+{
+  "id": "ecommerce-page",
+  "name": "Ecommerce Page",
+  "description": "Kit para páginas de ecommerce e produto",
+  "projectTypes": ["ecommerce-page"],
+  "skills": [
+    "lp-conversion-architect",
+    "brand-visual-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer",
+    "conversion-copywriter"
+  ],
+  "optionalSkills": ["visual-qa-reviewer"],
+  "maxSkills": 3,
+  "maxAgents": 3
+}

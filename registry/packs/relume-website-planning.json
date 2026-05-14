@@ -1,0 +1,13 @@
+{
+  "id": "relume-website-planning",
+  "name": "Relume Website Planning",
+  "description": "Kit de planejamento para sites: sitemap, wireframe textual, arquitetura de informação.",
+  "projectTypes": ["landing-page", "institutional-site"],
+  "skills": [
+    "relume-site-architect"
+  ],
+  "agents": [],
+  "maxSkills": 1,
+  "maxAgents": 0,
+  "suggestedDesignEngines": ["relume"]
+}

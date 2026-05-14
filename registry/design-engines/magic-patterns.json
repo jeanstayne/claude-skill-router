@@ -1,0 +1,12 @@
+{
+  "id": "magic-patterns",
+  "name": "Magic Patterns",
+  "category": "design-engine",
+  "bestFor": ["ui-inspiration", "component-gallery", "pattern-reference", "design-exploration"],
+  "integrationType": ["manual-reference", "prompt-reference"],
+  "recommendedFor": ["landing-page", "dashboard-saas", "ecommerce-page"],
+  "riskLevel": "low",
+  "useWhen": "Quando precisa de inspiração rápida de UI para seções ou componentes específicos, sem precisar de um design system completo.",
+  "doNotUseWhen": "Quando a direção visual já está bem definida e não há necessidade de explorar variações.",
+  "notes": "Galeria de referência de padrões de UI. Útil para inspiração visual de componentes individuais. Sem dependência externa."
+}

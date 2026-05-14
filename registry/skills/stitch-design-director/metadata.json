@@ -1,0 +1,10 @@
+{
+  "id": "stitch-design-director",
+  "name": "Stitch Design Director",
+  "version": "1.0.0",
+  "category": "design-system",
+  "projectTypes": ["dashboard-saas", "internal-system", "institutional-site"],
+  "stacks": ["react", "next", "vite", "vue"],
+  "maxDefaultUse": false,
+  "description": "Cria design systems, tokens visuais, variações temáticas e documentação de componentes. Padroniza atmosfera visual e consistência entre marcas."
+}

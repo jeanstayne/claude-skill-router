@@ -1,0 +1,10 @@
+{
+  "id": "relume-site-architect",
+  "name": "Relume Site Architect",
+  "version": "1.0.0",
+  "category": "planning",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page"],
+  "stacks": ["react", "next", "vite", "astro", "vue", "html"],
+  "maxDefaultUse": true,
+  "description": "Planeja sitemap, wireframe textual, ordem de seções e arquitetura de informação antes da implementação. Metodologia de planejamento estruturado."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "skill-router-autopilot",
+  "name": "Skill Router Autopilot",
+  "version": "1.0.0",
+  "category": "automation",
+  "projectTypes": [
+    "landing-page",
+    "institutional-site",
+    "dashboard-saas",
+    "ecommerce-page",
+    "design-system",
+    "unknown"
+  ],
+  "stacks": [
+    "react",
+    "next",
+    "vite",
+    "astro",
+    "vue",
+    "html"
+  ],
+  "maxDefaultUse": false,
+  "autonomousTrigger": true,
+  "description": "Aciona o claude-skill-router automaticamente para tarefas de LP, site, dashboard, UI, design visual e copy de conversão."
+}

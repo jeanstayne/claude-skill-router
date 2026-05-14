@@ -1,0 +1,19 @@
+{
+  "id": "v0-dashboard-ui",
+  "name": "v0 Dashboard UI",
+  "description": "Kit para dashboards com componentes Shadcn/UI premium estilo v0.",
+  "projectTypes": ["dashboard-saas", "internal-system"],
+  "skills": [
+    "v0-shadcn-ui-generator",
+    "brand-visual-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer"
+  ],
+  "optionalSkills": ["visual-qa-reviewer"],
+  "maxSkills": 3,
+  "maxAgents": 2,
+  "suggestedDesignEngines": ["v0"]
+}

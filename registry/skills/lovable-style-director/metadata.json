@@ -1,0 +1,10 @@
+{
+  "id": "lovable-style-director",
+  "name": "Lovable Style Director",
+  "version": "1.0.0",
+  "category": "visual",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page", "dashboard-saas"],
+  "stacks": ["react", "next", "vite", "vue", "html"],
+  "maxDefaultUse": false,
+  "description": "Eleva a direção visual de projetos para nível premium. Foco em composição, ritmo visual, experiência completa de produto e estética não-genérica."
+}

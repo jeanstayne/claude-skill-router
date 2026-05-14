@@ -1,0 +1,10 @@
+{
+  "id": "brand-visual-director",
+  "name": "Brand Visual Director",
+  "version": "1.0.0",
+  "category": "visual",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page", "dashboard-saas"],
+  "stacks": ["react", "next", "vite", "vue", "astro", "html"],
+  "maxDefaultUse": true,
+  "description": "Define personalidade visual por marca — paleta, tipografia, botões, cards, densidade visual, diferenciação estética."
+}

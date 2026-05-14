@@ -1,0 +1,14 @@
+{
+  "id": "autopilot-workflow",
+  "name": "Skill Router Autopilot Workflow",
+  "type": "workflow",
+  "advanced": true,
+  "skills": [
+    "skill-router-autopilot"
+  ],
+  "agents": [],
+  "prompts": [
+    "auto-skill-router-workflow"
+  ],
+  "description": "Instala a skill autopilot para orientar Claude Code a chamar o Skill Router automaticamente em tarefas de site, LP, dashboard, UI e design."
+}

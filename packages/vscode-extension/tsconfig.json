@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "lib": ["ES2022"],
+    "types": ["node", "vscode"],
+    "paths": {
+      "@claude-skill-router/core": ["../core/dist/index.d.ts"],
+      "@claude-skill-router/core/*": ["../core/dist/*"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}

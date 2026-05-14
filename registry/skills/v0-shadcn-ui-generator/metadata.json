@@ -1,0 +1,10 @@
+{
+  "id": "v0-shadcn-ui-generator",
+  "name": "v0 Shadcn/UI Generator",
+  "version": "1.0.0",
+  "category": "components",
+  "projectTypes": ["dashboard-saas", "internal-system", "landing-page"],
+  "stacks": ["react", "next", "vite"],
+  "maxDefaultUse": false,
+  "description": "Cria componentes React/Tailwind/Shadcn premium: cards, modais, data tables, grids, formulários. Foco em qualidade de implementação e reuso."
+}

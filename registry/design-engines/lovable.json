@@ -1,0 +1,13 @@
+{
+  "id": "lovable",
+  "name": "Lovable",
+  "category": "design-engine",
+  "url": "https://lovable.dev",
+  "bestFor": ["landing-page", "saas-app", "marketing-site", "full-product-flow"],
+  "integrationType": ["manual-reference", "prompt-reference"],
+  "recommendedFor": ["landing-page", "dashboard-saas", "institutional-site", "ecommerce-page"],
+  "riskLevel": "low",
+  "useWhen": "Quando o projeto precisa de uma experiência visual completa com aparência premium e estrutura de produto bem resolvida. Ideal para referência de composição, ritmo visual e qualidade de UI.",
+  "doNotUseWhen": "Quando já existe design aprovado no Figma e a tarefa é apenas implementação fiel. Também não usar quando o estilo da marca já está muito consolidado.",
+  "notes": "Usar como referência de direção visual e qualidade de composição, sem depender de API externa. O output do Lovable serve como benchmark de qualidade, não como código a ser copiado."
+}

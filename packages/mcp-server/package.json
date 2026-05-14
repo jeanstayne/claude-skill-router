@@ -1,0 +1,27 @@
+{
+  "name": "@claude-skill-router/mcp-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'lint: ok'",
+    "test": "vitest run",
+    "runtime:check": "tsx scripts/runtime-check.ts",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^25.7.0",
+    "@types/vscode": "^1.120.0",
+    "typescript": "^5.5.0",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {
+    "@claude-skill-router/core": "*",
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "zod": "^3.23.0"
+  }
+}

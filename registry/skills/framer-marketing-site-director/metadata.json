@@ -1,0 +1,10 @@
+{
+  "id": "framer-marketing-site-director",
+  "name": "Framer Marketing Site Director",
+  "version": "1.0.0",
+  "category": "marketing",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page"],
+  "stacks": ["react", "next", "vite", "astro", "html"],
+  "maxDefaultUse": false,
+  "description": "Cria sites de marketing e landing pages com estética editorial e comercial. Foco em hero impactante, animações suaves, storytelling visual e ritmo de página."
+}

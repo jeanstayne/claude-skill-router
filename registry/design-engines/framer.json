@@ -1,0 +1,12 @@
+{
+  "id": "framer",
+  "name": "Framer",
+  "category": "design-engine",
+  "bestFor": ["marketing-site", "landing-page", "editorial-layout", "animation-rich"],
+  "integrationType": ["manual-reference", "prompt-reference"],
+  "recommendedFor": ["landing-page", "institutional-site", "ecommerce-page"],
+  "riskLevel": "low",
+  "useWhen": "Quando o projeto é um site de marketing ou landing page que precisa de estética editorial, animações suaves e storytelling visual forte.",
+  "doNotUseWhen": "Quando o projeto é um dashboard ou sistema interno com foco em densidade de dados, não em narrativa visual.",
+  "notes": "Referência para ritmo visual, animações, hero sections impactantes e layouts editoriais. Não depende de API externa."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "lovable-premium-lp",
+  "name": "Lovable Premium LP",
+  "description": "Kit premium para landing pages com direção visual forte estilo Lovable. Pipeline: arquitetura → conversão → direção visual → QA.",
+  "projectTypes": ["landing-page", "ecommerce-page"],
+  "skills": [
+    "relume-site-architect",
+    "lp-conversion-architect",
+    "brand-visual-director",
+    "lovable-style-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer",
+    "conversion-copywriter"
+  ],
+  "optionalSkills": ["stitch-design-director"],
+  "maxSkills": 5,
+  "maxAgents": 3,
+  "suggestedDesignEngines": ["lovable", "relume"]
+}

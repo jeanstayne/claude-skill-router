@@ -1,0 +1,12 @@
+{
+  "_comment": "Cole no .mcp.json da raiz do seu projeto. Substitua /ABSOLUTE/PATH/TO pelo caminho real.",
+  "mcpServers": {
+    "claude-skill-router": {
+      "command": "node",
+      "args": [
+        "/ABSOLUTE/PATH/TO/claude-skill-router/packages/mcp-server/dist/index.js"
+      ],
+      "env": {}
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "builder-visual-copilot",
+  "name": "Builder Visual Copilot",
+  "category": "design-engine",
+  "bestFor": ["figma-to-code", "design-conversion", "rapid-prototyping"],
+  "integrationType": ["manual-reference"],
+  "recommendedFor": ["landing-page", "institutional-site"],
+  "riskLevel": "medium",
+  "useWhen": "Quando existe design Figma e o objetivo é acelerar a conversão para código, mas com revisão humana de qualidade.",
+  "doNotUseWhen": "Quando não há design Figma ou quando a fidelidade ao código manual é crítica.",
+  "notes": "Ferramenta de conversão Figma-to-code. Usar como acelerador inicial, sempre com revisão de qualidade. Sem dependência de API."
+}

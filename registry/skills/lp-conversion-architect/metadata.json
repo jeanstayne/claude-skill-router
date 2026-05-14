@@ -1,0 +1,10 @@
+{
+  "id": "lp-conversion-architect",
+  "name": "LP Conversion Architect",
+  "version": "1.0.0",
+  "category": "conversion",
+  "projectTypes": ["landing-page", "ecommerce-page"],
+  "stacks": ["react", "next", "vite", "html"],
+  "maxDefaultUse": true,
+  "description": "Estrutura landing pages com foco em conversão — oferta, público, dor, desejo, objeções, hero, benefícios, prova, FAQ, CTA."
+}

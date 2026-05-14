@@ -1,0 +1,71 @@
+{
+  "name": "claude-skill-router-extension",
+  "displayName": "Claude Skill Router",
+  "version": "1.0.0",
+  "publisher": "claude-skill-router",
+  "private": true,
+  "type": "module",
+  "main": "./dist/extension.js",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "activationEvents": [
+    "onCommand:claude-skill-router.scanWorkspace",
+    "onCommand:claude-skill-router.recommendSkills",
+    "onCommand:claude-skill-router.applyRecommendedPack",
+    "onCommand:claude-skill-router.openLatestReport",
+    "onCommand:claude-skill-router.runPolicyAudit",
+    "onCommand:claude-skill-router.prepareFromPrompt",
+    "onCommand:claude-skill-router.installAutopilotSkill"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "claude-skill-router.scanWorkspace",
+        "title": "Claude Skill Router: Scan Workspace"
+      },
+      {
+        "command": "claude-skill-router.recommendSkills",
+        "title": "Claude Skill Router: Recommend Skills"
+      },
+      {
+        "command": "claude-skill-router.applyRecommendedPack",
+        "title": "Claude Skill Router: Apply Recommended Pack"
+      },
+      {
+        "command": "claude-skill-router.openLatestReport",
+        "title": "Claude Skill Router: Open Latest Report"
+      },
+      {
+        "command": "claude-skill-router.runPolicyAudit",
+        "title": "Claude Skill Router: Run Policy Audit"
+      },
+      {
+        "command": "claude-skill-router.prepareFromPrompt",
+        "title": "Claude Skill Router: Prepare Project From Prompt"
+      },
+      {
+        "command": "claude-skill-router.installAutopilotSkill",
+        "title": "Claude Skill Router: Install Autopilot Skill"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'lint: ok'",
+    "test": "echo 'tests: ok'",
+    "package": "vsce package --no-dependencies",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^25.7.0",
+    "@types/vscode": "^1.93.0",
+    "@vscode/vsce": "^3.9.1",
+    "typescript": "^5.5.0"
+  },
+  "dependencies": {
+    "@claude-skill-router/core": "*",
+    "zod": "^3.23.0"
+  }
+}

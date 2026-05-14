@@ -1,0 +1,12 @@
+{
+  "id": "uizard",
+  "name": "Uizard",
+  "category": "design-engine",
+  "bestFor": ["wireframe-to-ui", "rapid-prototyping", "sketch-to-design"],
+  "integrationType": ["manual-reference", "prompt-reference"],
+  "recommendedFor": ["dashboard-saas", "internal-system"],
+  "riskLevel": "low",
+  "useWhen": "Quando o projeto está no estágio inicial de wireframe e precisa de prototipação rápida de UI.",
+  "doNotUseWhen": "Quando já existe design de alta fidelidade aprovado.",
+  "notes": "Referência para prototipação rápida a partir de wireframes. Sem dependência externa."
+}
