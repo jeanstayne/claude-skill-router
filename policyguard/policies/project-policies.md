@@ -132,3 +132,30 @@ Regressões visuais com severidade `high` devem ser corrigidas antes de `medium`
 
 ### [low] phase-16-modules-tested
 Todo módulo novo da Phase 16 (Design System Enforcer, SEO by Default, Runtime Feedback, Preview QA Loop, Sandbox Template Registry) deve ter cobertura de testes.
+
+### [high] image-generation-never-auto-executes
+Nenhuma tool de geração de imagem (list_image_providers, recommend_image_provider, generate_image_brief_v2, generate_image_prompts, plan_image_generation) pode executar provider externo automaticamente. Toda geração requer confirm:true.
+
+### [high] image-provider-api-keys-never-hardcoded
+Nenhum arquivo de código pode conter API keys hardcoded. Providers de imagem devem ler credenciais exclusivamente de variáveis de ambiente.
+
+### [high] nano-banana-execution-requires-confirm
+Qualquer execução do provider Nano Banana requer confirmação explícita do usuário e credenciais configuradas em env vars.
+
+### [high] gpt-image-2-execution-requires-confirm
+Qualquer execução do provider GPT Image 2 requer confirmação explícita do usuário e credenciais configuradas em env vars.
+
+### [medium] image-provider-registry-schema-required
+Todo provider de imagem no registry (registry/image-providers/) deve passar validação Zod do ImageProviderSchema.
+
+### [medium] lp-destaque-agro-seo-must-not-reference-destaque-system
+A LP Destaque Agro não deve conter metadados de Destaque System. Title, description, og:title, og:description, author e canonical devem referenciar Destaque Agro.
+
+### [medium] lp-destaque-agro-must-use-contrast-safe-sections
+A LP Destaque Agro deve usar seções com contraste adequado. Cards translúcidos devem ter overlay suficiente. Texto branco sobre fundo claro é proibido.
+
+### [medium] image-brief-required-before-provider-execution
+Antes de qualquer comando de geração externa, um brief de imagem deve existir em .claude/image-briefs/.
+
+### [low] image-cli-json-valid
+Os comandos CLI de imagem (image-providers, image-provider-recommend, image-brief-v2, image-prompts, image-plan) devem produzir JSON válido com --json.

@@ -1,0 +1,20 @@
+{
+  "id": "site-image-generation-stack",
+  "name": "Site Image Generation Stack",
+  "type": "workflow",
+  "advanced": true,
+  "skills": [
+    "site-image-generation-orchestrator",
+    "brand-visual-director",
+    "marketplace-visual-asset-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer"
+  ],
+  "maxSkills": 4,
+  "maxAgents": 3,
+  "projectTypes": ["landing-page", "institutional-site", "marketing-site"],
+  "description": "Workflow para criar briefs, prompts e planos de imagem para LPs/sites usando providers externos opcionais como GPT Image 2 e Nano Banana."
+}

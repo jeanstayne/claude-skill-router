@@ -45,6 +45,13 @@ import { previewQaLoopTool } from './tools/previewQaLoopTool.js';
 import { designTokensPlanTool } from './tools/designTokensPlanTool.js';
 import { shadcnVariantPlanTool } from './tools/shadcnVariantPlanTool.js';
 
+// Phase 17 — Image Generation Orchestrator
+import { listImageProvidersTool } from './tools/listImageProvidersTool.js';
+import { recommendImageProviderTool } from './tools/recommendImageProviderTool.js';
+import { generateImageBriefToolV2 } from './tools/generateImageBriefToolV2.js';
+import { generateImagePromptsTool } from './tools/generateImagePromptsTool.js';
+import { planImageGenerationTool } from './tools/planImageGenerationTool.js';
+
 // Helper: wrap handler result in MCP content format
 function wrapHandler<T>(handler: (input: T) => Promise<Record<string, unknown>>) {
   return async (input: T) => {
@@ -255,6 +262,33 @@ export function createServer(): McpServer {
     shadcnVariantPlanTool.name,
     { description: shadcnVariantPlanTool.description, inputSchema: shadcnVariantPlanTool.inputSchema },
     wrapHandler(shadcnVariantPlanTool.handler)
+  );
+
+  // Phase 17 — Image Generation Orchestrator
+  server.registerTool(
+    listImageProvidersTool.name,
+    { description: listImageProvidersTool.description, inputSchema: listImageProvidersTool.inputSchema },
+    wrapHandler(listImageProvidersTool.handler)
+  );
+  server.registerTool(
+    recommendImageProviderTool.name,
+    { description: recommendImageProviderTool.description, inputSchema: recommendImageProviderTool.inputSchema },
+    wrapHandler(recommendImageProviderTool.handler)
+  );
+  server.registerTool(
+    generateImageBriefToolV2.name,
+    { description: generateImageBriefToolV2.description, inputSchema: generateImageBriefToolV2.inputSchema },
+    wrapHandler(generateImageBriefToolV2.handler)
+  );
+  server.registerTool(
+    generateImagePromptsTool.name,
+    { description: generateImagePromptsTool.description, inputSchema: generateImagePromptsTool.inputSchema },
+    wrapHandler(generateImagePromptsTool.handler)
+  );
+  server.registerTool(
+    planImageGenerationTool.name,
+    { description: planImageGenerationTool.description, inputSchema: planImageGenerationTool.inputSchema },
+    wrapHandler(planImageGenerationTool.handler)
   );
 
   return server;

@@ -1,0 +1,25 @@
+{
+  "id": "site-image-generation-orchestrator",
+  "name": "Site Image Generation Orchestrator",
+  "version": "1.0.0",
+  "category": "image-generation",
+  "projectTypes": [
+    "landing-page",
+    "institutional-site",
+    "marketing-site"
+  ],
+  "stacks": [
+    "react",
+    "next",
+    "vite",
+    "html"
+  ],
+  "providers": [
+    "gpt-image-2",
+    "nano-banana"
+  ],
+  "requiresExternalExecution": true,
+  "autoExecuteAllowed": false,
+  "dryRunDefault": true,
+  "description": "Orquestra briefs e prompts de imagem para sites/LPs com providers externos opcionais."
+}

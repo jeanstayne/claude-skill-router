@@ -70,6 +70,15 @@ Use esta skill quando o pedido do usuário envolver:
 - Gerar plano de tokens de design + shadcn/ui variants.
 - Referências a "design system first", "SEO by default", "preview QA", "runtime feedback", "sandbox template".
 
+### Phase 17 — Image Generation Orchestrator
+- Gerar imagem para site (hero, background, banner, seção).
+- Criar brief de imagem profissional.
+- Criar prompts para GPT Image 2 ou Nano Banana.
+- Criar plano de geração de imagem (brief + prompts + command preview).
+- Escolher provider de imagem (gpt-image-2 vs nano-banana).
+- Referências a "imagem hero", "background hero", "banner", "visual da LP", "imagem agro", "imagem realista", "gerar imagem com nano banana", "gerar imagem com gpt image 2".
+- Substituir placeholder visual por imagem gerada.
+
 ## Quando não usar
 
 Não use esta skill quando o pedido for:
@@ -121,6 +130,20 @@ Antes de implementar qualquer alteração visual, estrutural ou de página:
 8. Rode validações.
 
 9. Gere relatório final.
+
+### Fluxo específico para geração de imagem
+
+Quando a intenção for relacionada a imagem:
+
+1. Chamar `plan_image_generation` com `dryRun: true`.
+2. Mostrar brief, provider recomendado, prompts e command preview.
+3. **Nunca** executar geração externa automaticamente.
+4. Se o usuário quiser executar, alertar que requer:
+   - Provider externo instalado (codex CLI para GPT Image 2, Gemini CLI para Nano Banana).
+   - API key configurada em env var.
+   - Confirmação explícita (`confirm: true`).
+5. Se a imagem for gerada manualmente e salva em `public/images/<brand>/`, atualizar a LP para usar o arquivo local.
+6. Se não houver imagem gerada, manter fallback (SVG, gradiente).
 
 ## Regras de segurança
 

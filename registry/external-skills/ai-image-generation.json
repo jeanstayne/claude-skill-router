@@ -24,5 +24,8 @@
   "autoInstallAllowed": false,
   "autoExecuteAllowed": false,
   "useAsReference": true,
-  "notes": "AI image generation via inference.sh. NEVER auto-execute."
+  "notes": "AI image generation via inference.sh. NEVER auto-execute.",
+  "providerRegistry": "registry/image-providers/nano-banana.json",
+  "relatedProvider": "nano-banana",
+  "orchestrator": "site-image-generation-orchestrator"
 }

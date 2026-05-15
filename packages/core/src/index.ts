@@ -9,3 +9,4 @@ export * from './reports/index.js';
 export * from './policy/index.js';
 export * from './router/index.js';
 export * from './lovable-pipeline/index.js';
+export * from './image-generation/index.js';

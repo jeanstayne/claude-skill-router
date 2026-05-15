@@ -1,0 +1,30 @@
+{
+  "id": "gpt-image-2",
+  "name": "GPT Image 2",
+  "category": "image-generation",
+  "provider": "openai",
+  "bestFor": [
+    "brand-safe website visuals",
+    "hero section images",
+    "ad creatives",
+    "product mockups",
+    "images with text or signage",
+    "iterative image editing"
+  ],
+  "supports": {
+    "textToImage": true,
+    "imageToImage": true,
+    "multiReference": true,
+    "transparentBackground": false
+  },
+  "requiresExternalExecution": true,
+  "requiresNetwork": true,
+  "requiresApiKey": true,
+  "envVars": [
+    "OPENAI_API_KEY"
+  ],
+  "autoExecuteAllowed": false,
+  "dryRunDefault": true,
+  "riskLevel": "high",
+  "notes": "Use only with explicit confirmation. Never hardcode API keys."
+}

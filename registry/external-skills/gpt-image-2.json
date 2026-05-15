@@ -24,5 +24,7 @@
   "autoInstallAllowed": false,
   "autoExecuteAllowed": false,
   "useAsReference": true,
-  "notes": "GPT image generation (DALL-E). NEVER auto-execute."
+  "notes": "GPT image generation (DALL-E). NEVER auto-execute.",
+  "providerRegistry": "registry/image-providers/gpt-image-2.json",
+  "orchestrator": "site-image-generation-orchestrator"
 }

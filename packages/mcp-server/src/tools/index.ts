@@ -27,3 +27,20 @@ export { generateVisualDirectionsTool } from './generateVisualDirectionsTool.js'
 export { selectBrandTemplateTool } from './selectBrandTemplateTool.js';
 export { generateDesignMdTool } from './generateDesignMdTool.js';
 export { generateComponentFirstPlanTool } from './generateComponentFirstPlanTool.js';
+
+// Phase 16 — Design System Enforcer, SEO, Sandbox, Runtime Feedback, Preview QA
+export { designSystemEnforcerTool } from './designSystemEnforcerTool.js';
+export { seoByDefaultTool } from './seoByDefaultTool.js';
+export { sandboxTemplateRecommendTool } from './sandboxTemplateRecommendTool.js';
+export { sandboxTemplateLoadTool } from './sandboxTemplateLoadTool.js';
+export { runtimeFeedbackAnalyzeTool } from './runtimeFeedbackAnalyzeTool.js';
+export { previewQaLoopTool } from './previewQaLoopTool.js';
+export { designTokensPlanTool } from './designTokensPlanTool.js';
+export { shadcnVariantPlanTool } from './shadcnVariantPlanTool.js';
+
+// Phase 17 — Image Generation Orchestrator
+export { listImageProvidersTool } from './listImageProvidersTool.js';
+export { recommendImageProviderTool } from './recommendImageProviderTool.js';
+export { generateImageBriefToolV2 } from './generateImageBriefToolV2.js';
+export { generateImagePromptsTool } from './generateImagePromptsTool.js';
+export { planImageGenerationTool } from './planImageGenerationTool.js';

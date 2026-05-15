@@ -43,3 +43,13 @@ export {
   LovableStylePipelineInputSchema, type LovableStylePipelineInput,
   LovableStylePipelineResultSchema, type LovableStylePipelineResult,
 } from './lovablePipelineSchema.js';
+
+// Image Generation Orchestrator schemas (Phase 17)
+export {
+  ImageProviderSchema, type ImageProvider,
+  ImageBriefSchemaV2, type ImageBriefV2,
+  ImagePromptSchema, type ImagePrompt,
+  ImageGenerationInputSchema, type ImageGenerationInput,
+  ImageGenerationPlanSchema, type ImageGenerationPlan,
+  ImageGenerationResultSchema, type ImageGenerationResult,
+} from './imageGenerationSchema.js';

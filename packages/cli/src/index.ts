@@ -30,6 +30,11 @@ import { sandboxTemplateCommand } from './commands/sandboxTemplate.js';
 import { runtimeFeedbackCommand } from './commands/runtimeFeedback.js';
 import { previewQaCommand } from './commands/previewQa.js';
 import { designTokensCommand } from './commands/designTokens.js';
+import { imageProvidersListCommand } from './commands/imageProvidersList.js';
+import { imageProviderRecommendCommand } from './commands/imageProviderRecommend.js';
+import { imageBriefCommand } from './commands/imageBriefV2.js';
+import { imagePromptsCommand } from './commands/imagePrompts.js';
+import { imagePlanCommand } from './commands/imagePlan.js';
 import * as path from 'node:path';
 
 interface CliOptions {
@@ -37,7 +42,7 @@ interface CliOptions {
   json?: boolean; dryRun?: boolean; auto?: boolean; confirm?: boolean; help?: boolean;
   scope?: string; withClaudeMd?: boolean;
   maxResults?: number; category?: string; riskLevel?: string; brand?: string; variantCount?: number;
-  stylePreference?: string; projectType?: string; intent?: string;
+  stylePreference?: string; projectType?: string; intent?: string; provider?: string; purpose?: string;
 }
 
 function parseArgs(args: string[]): { command: string; options: CliOptions; positional: string[] } {
@@ -64,6 +69,8 @@ function parseArgs(args: string[]): { command: string; options: CliOptions; posi
     else if (arg === '--style' && i + 1 < args.length) options.stylePreference = args[++i];
     else if (arg === '--project-type' && i + 1 < args.length) options.projectType = args[++i];
     else if (arg === '--intent' && i + 1 < args.length) options.intent = args[++i];
+    else if (arg === '--provider' && i + 1 < args.length) options.provider = args[++i];
+    else if (arg === '--purpose' && i + 1 < args.length) options.purpose = args[++i];
     else if (!arg.startsWith('-')) { if (!command) command = arg; else positional.push(arg); }
   }
 
@@ -103,6 +110,11 @@ Commands:
   runtime-feedback         Analyze runtime feedback (console logs + network requests)
   preview-qa               Run Preview QA Loop (checklist, viewport matrix, regressions)
   design-tokens            Generate design tokens + shadcn/ui variant plan
+  image-providers          List all image generation providers
+  image-provider-recommend  Recommend best image provider for a request
+  image-brief-v2           Generate image brief v2 (brand-aware, detailed)
+  image-prompts            Generate provider-specific image prompts for all formats
+  image-plan               Full image generation plan (brief + prompts + command preview)
 
 Options:
   --project <path>         Path to the project (default: current directory)
@@ -122,6 +134,8 @@ Options:
   --style <pref>           Style preference for visual directions (e.g. premium, editorial, conversion)
   --project-type <type>    Project type override for template selection
   --intent <intent>        Intent override for template selection
+  --provider <id>          Image provider: gpt-image-2 or nano-banana
+  --purpose <purpose>      Image purpose: hero, section, ad, social, background, mockup
   -h, --help               Show this help
 
 Examples:
@@ -351,6 +365,42 @@ async function main() {
         if (!dtRequest) { console.error('Error: --request is required for design-tokens.'); process.exit(1); }
         await designTokensCommand(projectPath, dtRequest, {
           json: options.json, stylePreference: options.stylePreference,
+        });
+        break;
+      }
+
+      // Phase 17 — Image Generation Orchestrator
+      case 'image-providers':
+        await imageProvidersListCommand({ json: options.json });
+        break;
+
+      case 'image-provider-recommend': {
+        const iprRequest = options.request || '';
+        if (!iprRequest) { console.error('Error: --request is required for image-provider-recommend.'); process.exit(1); }
+        await imageProviderRecommendCommand(iprRequest, { json: options.json, purpose: options.purpose });
+        break;
+      }
+
+      case 'image-brief-v2': {
+        const ibRequest = options.request || '';
+        if (!ibRequest) { console.error('Error: --request is required for image-brief-v2.'); process.exit(1); }
+        await imageBriefCommand(ibRequest, { json: options.json, brand: options.brand, provider: options.provider });
+        break;
+      }
+
+      case 'image-prompts': {
+        const ipRequest = options.request || '';
+        if (!ipRequest) { console.error('Error: --request is required for image-prompts.'); process.exit(1); }
+        await imagePromptsCommand(ipRequest, { json: options.json, brand: options.brand, provider: options.provider });
+        break;
+      }
+
+      case 'image-plan': {
+        const iPlanRequest = options.request || '';
+        if (!iPlanRequest) { console.error('Error: --request is required for image-plan.'); process.exit(1); }
+        await imagePlanCommand(projectPath, iPlanRequest, {
+          json: options.json, brand: options.brand, provider: options.provider,
+          purpose: options.purpose, dryRun: options.dryRun,
         });
         break;
       }

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Runtime check script for MCP Server handlers
-// Simulates the 16 MCP tools locally without Claude Code (Phase 14)
+// Simulates the 27 MCP tools locally without Claude Code (Phases 1-17)
 
 import * as path from 'node:path';
 import * as fs from 'node:fs/promises';
@@ -278,6 +278,90 @@ async function main() {
   check('has schema suggestions', croSeoResult.plan?.schema?.length > 0);
   check('does not require external execution', croSeoResult.requiresExternalExecution === false);
   check('recommends external skills', croSeoResult.recommendedExternalSkills?.length > 0);
+  console.log('');
+
+  // 20. list_image_providers (Phase 17)
+  console.log('20. list_image_providers');
+  const { listImageProvidersTool } = await import('../src/tools/listImageProvidersTool.js');
+  const listProvidersResult = await listImageProvidersTool.handler({});
+  check('has providers array', Array.isArray(listProvidersResult.providers));
+  check('has count', typeof listProvidersResult.count === 'number');
+  check('count > 0', listProvidersResult.count > 0);
+  check('includes gpt-image-2', listProvidersResult.providers.some((p: Record<string, unknown>) => p.id === 'gpt-image-2'));
+  check('includes nano-banana', listProvidersResult.providers.some((p: Record<string, unknown>) => p.id === 'nano-banana'));
+  console.log('');
+
+  // 21. recommend_image_provider (Phase 17)
+  console.log('21. recommend_image_provider');
+  const { recommendImageProviderTool } = await import('../src/tools/recommendImageProviderTool.js');
+  const recProviderResult = await recommendImageProviderTool.handler({
+    userRequest: 'imagem hero de campo de soja para landing page agro',
+    purpose: 'hero',
+  });
+  check('returns recommendedProvider', typeof recProviderResult.recommendedProvider === 'string');
+  check('recommends nano-banana for agro hero', recProviderResult.recommendedProvider === 'nano-banana');
+  check('has reason', typeof recProviderResult.reason === 'string');
+  check('has requiresConfirm=true', recProviderResult.requiresConfirm === true);
+  check('has warnings', recProviderResult.warnings.length > 0);
+  console.log('');
+
+  // 22. generate_image_brief_v2 (Phase 17)
+  console.log('22. generate_image_brief_v2');
+  const { generateImageBriefToolV2 } = await import('../src/tools/generateImageBriefToolV2.js');
+  const briefV2Result = await generateImageBriefToolV2.handler({
+    userRequest: 'imagem hero para landing page de consultoria agro',
+    brand: 'Destaque Agro',
+  });
+  check('has brief', briefV2Result.brief !== undefined);
+  check('brief has objective', typeof briefV2Result.brief?.objective === 'string');
+  check('brief has brand=Destaque Agro', briefV2Result.brief?.brand === 'Destaque Agro');
+  check('brief has scene', typeof briefV2Result.brief?.scene === 'string');
+  check('brief has composition', typeof briefV2Result.brief?.composition === 'string');
+  check('brief has style', typeof briefV2Result.brief?.style === 'string');
+  check('requires confirm', briefV2Result.requiresConfirm === true);
+  check('requires external execution', briefV2Result.requiresExternalExecution === true);
+  check('has warnings', briefV2Result.warnings.length > 0);
+  console.log('');
+
+  // 23. generate_image_prompts (Phase 17)
+  console.log('23. generate_image_prompts');
+  const { generateImagePromptsTool } = await import('../src/tools/generateImagePromptsTool.js');
+  const promptsResult = await generateImagePromptsTool.handler({
+    userRequest: 'hero image for agro LP',
+    providerId: 'nano-banana',
+    brand: 'Destaque Agro',
+  });
+  check('has provider=nano-banana', promptsResult.provider === 'nano-banana');
+  check('has prompts array', Array.isArray(promptsResult.prompts));
+  check('prompts are provider-specific', promptsResult.prompts.length > 0 && promptsResult.prompts.every((p: Record<string, unknown>) => p.provider === 'nano-banana'));
+  check('each prompt has id', promptsResult.prompts.every((p: Record<string, unknown>) => typeof p.id === 'string'));
+  check('each prompt has prompt text', promptsResult.prompts.every((p: Record<string, unknown>) => typeof p.prompt === 'string'));
+  console.log('');
+
+  // 24. plan_image_generation (Phase 17)
+  console.log('24. plan_image_generation (dryRun default)');
+  const { planImageGenerationTool } = await import('../src/tools/planImageGenerationTool.js');
+  const planDryResult = await planImageGenerationTool.handler({
+    projectPath: FIXTURE,
+    userRequest: 'hero image for landing page',
+    brand: 'Destaque Agro',
+  });
+  check('dryRun is true', planDryResult.dryRun === true);
+  check('has success', typeof planDryResult.success === 'boolean');
+  check('has recommendedProvider', typeof planDryResult.recommendedProvider === 'string');
+  check('has warnings', Array.isArray(planDryResult.warnings));
+  check('has commandPreview', typeof planDryResult.commandPreview === 'string');
+
+  console.log('25. plan_image_generation (blocked without confirm)');
+  const planBlockResult = await planImageGenerationTool.handler({
+    projectPath: FIXTURE,
+    userRequest: 'hero image',
+    dryRun: false,
+    confirm: false,
+  });
+  check('returns success=false', planBlockResult.success === false);
+  check('requires confirm', planBlockResult.requiresConfirm === true);
+  check('error message present', typeof planBlockResult.error === 'string');
   console.log('');
 
   // Cleanup temp
