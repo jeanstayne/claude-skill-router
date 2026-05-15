@@ -1,0 +1,28 @@
+{
+  "id": "frontend-design",
+  "name": "Frontend Design",
+  "source": "skills.sh",
+  "repository": "https://github.com/anthropics/skills",
+  "skillPath": "frontend-design",
+  "installCommand": "npx skills add https://github.com/anthropics/skills --skill frontend-design",
+  "category": "design",
+  "subcategories": [
+    "ui",
+    "frontend",
+    "layout"
+  ],
+  "bestFor": [
+    "create-landing-page",
+    "improve-landing-page",
+    "create-institutional-site",
+    "create-dashboard"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Use for frontend layout, component structure, and UI patterns."
+}

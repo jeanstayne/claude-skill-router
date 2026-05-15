@@ -1,0 +1,10 @@
+{
+  "id": "lovable-style-pipeline",
+  "name": "Lovable-Style Design Pipeline",
+  "version": "1.0.0",
+  "category": "design",
+  "projectTypes": ["landing-page", "institutional-site", "dashboard-saas", "ecommerce-page"],
+  "stacks": ["react", "next", "vite", "html"],
+  "maxDefaultUse": true,
+  "description": "Pipeline de design local: Product Marketing Context → Visual Directions → Brand Template → DESIGN.md → Component-First Plan → Visual QA Plan. Inspirado no Lovable.dev."
+}

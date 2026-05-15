@@ -1,0 +1,28 @@
+{
+  "id": "ai-image-generation",
+  "name": "AI Image Generation",
+  "source": "skills.sh",
+  "repository": "https://github.com/inference-sh-skills/skills",
+  "skillPath": "ai-image-generation",
+  "installCommand": "npx skills add https://github.com/inference-sh-skills/skills --skill ai-image-generation",
+  "category": "image",
+  "subcategories": [
+    "image",
+    "generation",
+    "ai",
+    "hero"
+  ],
+  "bestFor": [
+    "generate-site-images",
+    "create-hero-visual",
+    "create-image-prompts"
+  ],
+  "riskLevel": "high",
+  "requiresExternalCli": true,
+  "requiresLogin": true,
+  "requiresNetwork": true,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "AI image generation via inference.sh. NEVER auto-execute."
+}

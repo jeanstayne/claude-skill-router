@@ -1,0 +1,23 @@
+{
+  "id": "b2b-saas",
+  "name": "B2B SaaS",
+  "segments": ["SaaS B2B", "software empresarial", "plataforma", "automação", "gestão"],
+  "bestForBrands": ["empresas SaaS B2B", "plataformas de gestão", "software corporativo"],
+  "visualPersonality": ["profissional", "confiável", "moderno", "eficiente", "escalável"],
+  "recommendedPalette": {
+    "primary": "#1e40af",
+    "accent": "#06b6d4",
+    "background": "#f8fafc"
+  },
+  "typography": {
+    "headline": "Inter Tight",
+    "body": "Inter"
+  },
+  "componentStyle": {
+    "buttons": "rounded-lg font-semibold shadow-sm hover:shadow-md transition-all",
+    "cards": "bg-white rounded-xl shadow-sm border border-slate-100",
+    "sections": "py-20 md:py-28"
+  },
+  "recommendedSections": ["Hero com headline + demo/product screenshot", "Problema de negócio", "Solução e diferenciais", "Features detalhadas com screenshots", "Integrações e ecossistema", "Resultados e casos de sucesso", "Planos/Pricing", "FAQ empresarial (segurança, SLA, suporte)", "CTA com demo ou trial"],
+  "avoid": ["design muito consumer/colorido", "falta de seriedade", "jargão de vendas agressivo", "falta de prova técnica"]
+}

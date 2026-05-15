@@ -1,0 +1,23 @@
+{
+  "id": "health-beauty-premium",
+  "name": "Health & Beauty Premium",
+  "segments": ["beleza", "saúde", "cosméticos", "skincare", "bem-estar", "produtos premium"],
+  "bestForBrands": ["Ellegance", "marcas de beleza premium", "dermocosméticos"],
+  "visualPersonality": ["sofisticado", "aspiracional", "acolhedor", "sensorial", "elegante"],
+  "recommendedPalette": {
+    "primary": "#831843",
+    "accent": "#d4a574",
+    "background": "#fdfbf9"
+  },
+  "typography": {
+    "headline": "Playfair Display",
+    "body": "Inter"
+  },
+  "componentStyle": {
+    "buttons": "rounded-full px-8 py-3 font-medium tracking-wide uppercase text-sm shadow-md hover:shadow-lg transition-all",
+    "cards": "bg-white/80 backdrop-blur rounded-2xl shadow-premium",
+    "sections": "py-24 md:py-32"
+  },
+  "recommendedSections": ["Hero com imagem lifestyle premium", "Antes e depois (resultados)", "Ingredientes e diferencial", "Benefícios comprovados", "Depoimentos com fotos reais", "Rituais de uso", "Garantia de satisfação", "CTA com oferta de primeira compra"],
+  "avoid": ["visual barato ou genérico", "cores muito vibrantes/saturadas", "tipografia sem personalidade", "promessas não comprovadas"]
+}

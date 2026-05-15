@@ -1,0 +1,27 @@
+{
+  "id": "paid-ads",
+  "name": "Paid Ads",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "paid-ads",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill paid-ads",
+  "category": "ads",
+  "subcategories": [
+    "ads",
+    "paid",
+    "campaign",
+    "budget"
+  ],
+  "bestFor": [
+    "create-paid-ads",
+    "create-ad-creative"
+  ],
+  "riskLevel": "medium",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Paid ads strategy — campaign structure, targeting, budget."
+}

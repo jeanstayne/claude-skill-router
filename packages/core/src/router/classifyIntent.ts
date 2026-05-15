@@ -103,6 +103,174 @@ const INTENT_PATTERNS: Array<{ intent: Intent; patterns: RegExp[]; priority: num
     ],
     priority: 5,
   },
+  // Phase 14 — Image generation
+  {
+    intent: 'generate-site-images',
+    patterns: [
+      /(?:cri[eua]r?|ger[ae]r?|gerar)\s+(?:imagens|imagem|assets? visuais?)/i,
+      /(?:ger[ae]r?|fazer)\s+(?:uma\s+)?(?:imagem|imagens)\s+(?:para|do)\s+(?:site|lp|landing|hero)/i,
+      /(?:preciso|quero)\s+(?:de\s+)?(?:imagens|imagem)/i,
+    ],
+    priority: 8,
+  },
+  {
+    intent: 'create-hero-visual',
+    patterns: [
+      /(?:hero|banner)\s+(?:visual|image|imagem)/i,
+      /(?:cri[eua]r?|fazer)\s+(?:o\s+)?(?:hero|banner)/i,
+    ],
+    priority: 8,
+  },
+  {
+    intent: 'create-image-prompts',
+    patterns: [
+      /prompts?\s+(?:para|de)\s+(?:imagem|imagens)/i,
+      /(?:prompt|brief)\s+(?:de|para)\s+(?:geração de\s+)?(?:imagem|visual)/i,
+    ],
+    priority: 7,
+  },
+  // Phase 14 — Copy/Marketing
+  {
+    intent: 'improve-headlines',
+    patterns: [
+      /melhor[ae]r?\s+(?:\w+\s+)?(?:headlines?|títulos?)/i,
+      /(?:headline|título)\s+(?:de|da)\s+(?:lp|landing|página)/i,
+      /cri[eua]r?\s+(?:nov[ao]s?\s+)?(?:headlines?|títulos?)/i,
+    ],
+    priority: 8,
+  },
+  {
+    intent: 'improve-marketing-copy',
+    patterns: [
+      /melhor[ae]r?\s+(?:a\s+)?(?:copy|copywriting|marketing copy)\s+(?:de|da|do|para)\s+(?:marketing|conversão|oferta)/i,
+      /(?:copy|copywriting)\s+(?:de|da)\s+(?:conversão|oferta|página)/i,
+    ],
+    priority: 8,
+  },
+  // Phase 14 — CRO
+  {
+    intent: 'audit-page-cro',
+    patterns: [
+      /(?:auditoria|análise)\s+(?:de\s+)?(?:cro|conversão)/i,
+      /(?:cro|conversão)\s+(?:da|do|na)\s+(?:página|site|lp)/i,
+      /otimizar\s+(?:a\s+)?(?:conversão|taxa de conversão)/i,
+      /(?:audit[ae]r?|analis[ae]r?)\s+(?:o\s+)?(?:cro|conversão)/i,
+    ],
+    priority: 7,
+  },
+  {
+    intent: 'optimize-form-cro',
+    patterns: [
+      /otimizar\s+(?:o\s+)?(?:formulário|form)/i,
+      /(?:formulário|form)\s+(?:de|para)\s+(?:lead|captura)/i,
+    ],
+    priority: 7,
+  },
+  {
+    intent: 'optimize-popup-cro',
+    patterns: [
+      /otimizar\s+(?:o\s+)?(?:popup|modal)/i,
+      /(?:popup|modal)\s+(?:de|para)\s+(?:saída|conversão)/i,
+    ],
+    priority: 7,
+  },
+  // Phase 14 — SEO
+  {
+    intent: 'optimize-seo',
+    patterns: [
+      /(?:seo|otimização)\s+(?:para|de)\s+(?:busca|google|tráfego)/i,
+      /melhor[ae]r?\s+(?:o\s+)?(?:seo|rankeamento)/i,
+      /(?:auditoria|análise)\s+(?:de\s+)?(?:seo|search)/i,
+      /otimiz[ae]r?\s+(?:o\s+)?(?:seo|search engine)/i,
+    ],
+    priority: 7,
+  },
+  {
+    intent: 'create-content-strategy',
+    patterns: [
+      /estratégia\s+(?:de|para)\s+(?:conteúdo|conteudo|content)/i,
+      /cri[eua]r?\s+(?:estratégia|planejamento)\s+(?:de|para)\s+(?:conteúdo|conteudo|content)/i,
+    ],
+    priority: 7,
+  },
+  {
+    intent: 'create-programmatic-seo-pages',
+    patterns: [
+      /(?:páginas?|paginas?)\s+(?:de\s+)?(?:seo\s+)?programátic[ao]s?/i,
+      /seo\s+programático/i,
+    ],
+    priority: 8,
+  },
+  {
+    intent: 'add-schema-markup',
+    patterns: [
+      /(?:schema|rich results|dados estruturados|json.ld)/i,
+      /adicionar\s+(?:schema|markup)/i,
+    ],
+    priority: 8,
+  },
+  // Phase 14 — Ads/Social
+  {
+    intent: 'create-ad-creative',
+    patterns: [
+      /cri[eua]r?\s+(?:anúncios?|ads?|criativos?)\s+(?:para|de)/i,
+      /(?:criativo|creative)\s+(?:de|para)\s+(?:anúncio|ad)/i,
+    ],
+    priority: 7,
+  },
+  {
+    intent: 'create-paid-ads',
+    patterns: [
+      /campanha\s+(?:paga|de\s+(?:ads?|anúncios?|tráfego pago))/i,
+      /cri[eua]r?\s+(?:campanha|estratégia)\s+(?:de\s+)?(?:ads?|anúncios?|tráfego pago|m[ií]dia paga)/i,
+      /(?:google ads|meta ads|facebook ads|tráfego pago)/i,
+    ],
+    priority: 8,
+  },
+  {
+    intent: 'create-social-content',
+    patterns: [
+      /cri[eua]r?\s+(?:posts?|conteúdo)\s+(?:para|de)\s+(?:instagram|social|redes)/i,
+      /(?:social media|redes sociais|instagram|reels)/i,
+      /pacote\s+(?:de\s+)?(?:posts?|conteúdo)\s+(?:para|de)\s+(?:social|instagram)/i,
+    ],
+    priority: 7,
+  },
+  {
+    intent: 'create-email-sequence',
+    patterns: [
+      /cri[eua]r?\s+(?:uma\s+)?(?:sequência|emails?)\s+(?:de|para)\s+(?:email|nutrição|onboarding)/i,
+      /(?:email|newsletter)\s+(?:sequence|sequência)/i,
+      /sequência\s+(?:de|para)\s+(?:emails?|nutrição|onboarding)/i,
+    ],
+    priority: 7,
+  },
+  {
+    intent: 'create-launch-strategy',
+    patterns: [
+      /(?:lançamento|lançar|go.to.market|g2m)\s+(?:de|do|da)/i,
+      /estratégia\s+(?:de|para)\s+(?:lançamento|go.to.market)/i,
+    ],
+    priority: 6,
+  },
+  // Phase 14 — Design system extraction
+  {
+    intent: 'extract-design-system',
+    patterns: [
+      /extrair\s+(?:o\s+)?(?:design system|estilo|tokens)/i,
+      /(?:design system|sistema de design)\s+(?:de|da|do)\s+(?:referência|site)/i,
+    ],
+    priority: 7,
+  },
+  // Phase 14 — Website audit
+  {
+    intent: 'audit-website',
+    patterns: [
+      /audit[ae]r?\s+(?:o\s+)?(?:site|website|página)/i,
+      /(?:auditoria|audit)\s+(?:completa|total)\s+(?:do|da)\s+(?:site|website)/i,
+    ],
+    priority: 6,
+  },
 ];
 
 export function classifyIntent(input: ClassificationInput): { intent: Intent; confidence: number } {

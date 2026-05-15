@@ -1,0 +1,26 @@
+{
+  "id": "canvas-design",
+  "name": "Canvas Design",
+  "source": "skills.sh",
+  "repository": "https://github.com/anthropics/skills",
+  "skillPath": "canvas-design",
+  "installCommand": "npx skills add https://github.com/anthropics/skills --skill canvas-design",
+  "category": "design",
+  "subcategories": [
+    "canvas",
+    "visual",
+    "layout"
+  ],
+  "bestFor": [
+    "create-landing-page",
+    "create-design-system"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Canvas-based design thinking for layouts and visual composition."
+}

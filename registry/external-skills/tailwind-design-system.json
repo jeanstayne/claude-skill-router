@@ -1,0 +1,26 @@
+{
+  "id": "tailwind-design-system",
+  "name": "Tailwind Design System",
+  "source": "skills.sh",
+  "repository": "https://github.com/wshobson/agents",
+  "skillPath": "tailwind-design-system",
+  "installCommand": "npx skills add https://github.com/wshobson/agents --skill tailwind-design-system",
+  "category": "design",
+  "subcategories": [
+    "tailwind",
+    "tokens",
+    "config"
+  ],
+  "bestFor": [
+    "create-design-system",
+    "create-landing-page"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Generate Tailwind config and design tokens from visual direction."
+}

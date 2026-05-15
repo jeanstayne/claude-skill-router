@@ -1,0 +1,51 @@
+{
+  "id": "nextjs-tailwind-shadcn",
+  "name": "Next.js + Tailwind + shadcn/ui",
+  "framework": "nextjs",
+  "language": "typescript",
+  "ui": ["tailwind", "shadcn"],
+  "version": "1.0.0",
+  "recommendedFor": [
+    "landing-page",
+    "sass-application",
+    "dashboard",
+    "ecommerce",
+    "multi-page-site"
+  ],
+  "requiredFiles": [
+    "package.json",
+    "tsconfig.json",
+    "next.config.ts",
+    "tailwind.config.ts",
+    "postcss.config.js",
+    "src/app/layout.tsx",
+    "src/app/page.tsx",
+    "src/index.css"
+  ],
+  "recommendedDependencies": {
+    "dependencies": {
+      "next": "^14.0.0",
+      "react": "^18.3.0",
+      "react-dom": "^18.3.0",
+      "tailwindcss": "^3.4.0",
+      "@radix-ui/react-slot": "^1.0.0",
+      "class-variance-authority": "^0.7.0",
+      "clsx": "^2.0.0",
+      "tailwind-merge": "^2.0.0",
+      "lucide-react": "^0.300.0",
+      "framer-motion": "^11.0.0"
+    },
+    "devDependencies": {
+      "typescript": "^5.0.0",
+      "@types/react": "^18.3.0",
+      "@types/node": "^20.0.0",
+      "postcss": "^8.0.0",
+      "autoprefixer": "^10.0.0"
+    }
+  },
+  "cssStrategy": "tailwind-utilities-with-css-variables",
+  "componentStrategy": "shadcn-copy-paste",
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "port": 3000
+}

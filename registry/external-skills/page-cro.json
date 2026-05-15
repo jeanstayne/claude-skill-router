@@ -1,0 +1,28 @@
+{
+  "id": "page-cro",
+  "name": "Page CRO",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "page-cro",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill page-cro",
+  "category": "marketing",
+  "subcategories": [
+    "cro",
+    "conversion",
+    "optimization",
+    "landing-page"
+  ],
+  "bestFor": [
+    "optimize-form-cro",
+    "improve-landing-page",
+    "audit-page-cro"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Page-level CRO audit and optimization recommendations."
+}

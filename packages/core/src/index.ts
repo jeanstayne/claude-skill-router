@@ -8,3 +8,4 @@ export * from './installer/index.js';
 export * from './reports/index.js';
 export * from './policy/index.js';
 export * from './router/index.js';
+export * from './lovable-pipeline/index.js';

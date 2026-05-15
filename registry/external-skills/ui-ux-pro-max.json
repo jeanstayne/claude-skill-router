@@ -1,0 +1,27 @@
+{
+  "id": "ui-ux-pro-max",
+  "name": "UI UX Pro Max",
+  "source": "skills.sh",
+  "repository": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+  "skillPath": "ui-ux-pro-max",
+  "installCommand": "npx skills add https://github.com/nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max",
+  "category": "design",
+  "subcategories": [
+    "ui",
+    "ux",
+    "premium"
+  ],
+  "bestFor": [
+    "improve-landing-page",
+    "create-dashboard",
+    "improve-dashboard"
+  ],
+  "riskLevel": "medium",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": true,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Premium UI/UX patterns. May reference external design resources."
+}

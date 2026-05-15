@@ -1,0 +1,23 @@
+{
+  "id": "automotive-premium",
+  "name": "Automotive Premium",
+  "segments": ["automotivo", "concessionárias", "locadoras", "seguro auto", "consórcio"],
+  "bestForBrands": ["Samar Veículos", "concessionárias premium", "montadoras"],
+  "visualPersonality": ["confiante", "dinâmico", "premium", "acolhedor", "profissional"],
+  "recommendedPalette": {
+    "primary": "#1a1a2e",
+    "accent": "#e94560",
+    "background": "#f8f9fa"
+  },
+  "typography": {
+    "headline": "Inter Tight",
+    "body": "Inter"
+  },
+  "componentStyle": {
+    "buttons": "rounded-lg shadow-md hover:shadow-lg transition-shadow",
+    "cards": "glass-card shadow-premium rounded-xl",
+    "sections": "py-20 md:py-28 gradient-hero"
+  },
+  "recommendedSections": ["Hero com veículo destaque", "Como funciona (3 passos)", "Benefícios do atendimento consultivo", "Depoimentos de clientes", "Garantia ou seguro", "FAQ sobre financiamento", "CTA com formulário de contato"],
+  "avoid": ["stock photos genéricas", "cores muito vibrantes", "tipografia decorativa", "layout muito carregado"]
+}

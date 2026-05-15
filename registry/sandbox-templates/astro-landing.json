@@ -1,0 +1,42 @@
+{
+  "id": "astro-landing",
+  "name": "Astro + Tailwind (Landing Page)",
+  "framework": "astro",
+  "language": "typescript",
+  "ui": ["tailwind"],
+  "version": "1.0.0",
+  "recommendedFor": [
+    "landing-page",
+    "blog",
+    "static-site",
+    "documentation-site",
+    "portfolio"
+  ],
+  "requiredFiles": [
+    "package.json",
+    "tsconfig.json",
+    "astro.config.mjs",
+    "tailwind.config.mjs",
+    "src/pages/index.astro",
+    "src/layouts/Layout.astro",
+    "src/styles/global.css"
+  ],
+  "recommendedDependencies": {
+    "dependencies": {
+      "astro": "^4.0.0",
+      "@astrojs/tailwind": "^5.0.0",
+      "tailwindcss": "^3.4.0"
+    },
+    "devDependencies": {
+      "typescript": "^5.0.0",
+      "@types/node": "^20.0.0",
+      "postcss": "^8.0.0",
+      "autoprefixer": "^10.0.0"
+    }
+  },
+  "cssStrategy": "tailwind-utilities-with-css-variables",
+  "componentStrategy": "astro-islands",
+  "buildCommand": "astro build",
+  "devCommand": "astro dev",
+  "port": 4321
+}

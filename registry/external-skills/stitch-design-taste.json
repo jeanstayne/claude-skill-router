@@ -1,0 +1,26 @@
+{
+  "id": "stitch-design-taste",
+  "name": "Stitch Design Taste",
+  "source": "skills.sh",
+  "repository": "https://github.com/leonxlnx/taste-skill",
+  "skillPath": "stitch-design-taste",
+  "installCommand": "npx skills add https://github.com/leonxlnx/taste-skill --skill stitch-design-taste",
+  "category": "design",
+  "subcategories": [
+    "stitch",
+    "tokens",
+    "design-system"
+  ],
+  "bestFor": [
+    "create-design-system",
+    "plan-website-structure"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Stitch-compatible design taste adapter."
+}

@@ -16,7 +16,17 @@
     "onCommand:claude-skill-router.openLatestReport",
     "onCommand:claude-skill-router.runPolicyAudit",
     "onCommand:claude-skill-router.prepareFromPrompt",
-    "onCommand:claude-skill-router.installAutopilotSkill"
+    "onCommand:claude-skill-router.installAutopilotSkill",
+    "onCommand:claude-skill-router.listExternalSkills",
+    "onCommand:claude-skill-router.recommendExternalSkills",
+    "onCommand:claude-skill-router.generateImageBrief",
+    "onCommand:claude-skill-router.generateCopyVariants",
+    "onCommand:claude-skill-router.generateCROSEOPlan",
+    "onCommand:claude-skill-router.runLovablePipeline",
+    "onCommand:claude-skill-router.generateProductMarketingContext",
+    "onCommand:claude-skill-router.generateVisualDirections",
+    "onCommand:claude-skill-router.selectBrandTemplate",
+    "onCommand:claude-skill-router.generateComponentFirstPlan"
   ],
   "contributes": {
     "commands": [
@@ -47,6 +57,46 @@
       {
         "command": "claude-skill-router.installAutopilotSkill",
         "title": "Claude Skill Router: Install Autopilot Skill"
+      },
+      {
+        "command": "claude-skill-router.listExternalSkills",
+        "title": "Claude Skill Router: List External Skills (Marketplace)"
+      },
+      {
+        "command": "claude-skill-router.recommendExternalSkills",
+        "title": "Claude Skill Router: Recommend External Skills"
+      },
+      {
+        "command": "claude-skill-router.generateImageBrief",
+        "title": "Claude Skill Router: Generate Image Brief/Prompt"
+      },
+      {
+        "command": "claude-skill-router.generateCopyVariants",
+        "title": "Claude Skill Router: Generate Copy Variants"
+      },
+      {
+        "command": "claude-skill-router.generateCROSEOPlan",
+        "title": "Claude Skill Router: Generate CRO/SEO Audit Plan"
+      },
+      {
+        "command": "claude-skill-router.runLovablePipeline",
+        "title": "Claude Skill Router: Run Lovable-Style Design Pipeline"
+      },
+      {
+        "command": "claude-skill-router.generateProductMarketingContext",
+        "title": "Claude Skill Router: Generate Product Marketing Context"
+      },
+      {
+        "command": "claude-skill-router.generateVisualDirections",
+        "title": "Claude Skill Router: Generate Visual Directions"
+      },
+      {
+        "command": "claude-skill-router.selectBrandTemplate",
+        "title": "Claude Skill Router: Select Brand Template"
+      },
+      {
+        "command": "claude-skill-router.generateComponentFirstPlan",
+        "title": "Claude Skill Router: Generate Component-First UI Plan"
       }
     ]
   },

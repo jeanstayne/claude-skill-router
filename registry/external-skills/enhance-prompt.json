@@ -1,0 +1,26 @@
+{
+  "id": "enhance-prompt",
+  "name": "Enhance Prompt",
+  "source": "skills.sh",
+  "repository": "https://github.com/google-labs-code/stitch-skills",
+  "skillPath": "enhance-prompt",
+  "installCommand": "npx skills add https://github.com/google-labs-code/stitch-skills --skill enhance-prompt",
+  "category": "design",
+  "subcategories": [
+    "prompt",
+    "stitch",
+    "enhance"
+  ],
+  "bestFor": [
+    "create-design-system",
+    "plan-website-structure"
+  ],
+  "riskLevel": "medium",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": true,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Enhance design prompts for Stitch."
+}

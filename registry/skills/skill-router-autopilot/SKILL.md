@@ -27,6 +27,49 @@ Use esta skill quando o pedido do usuário envolver:
 - Criar estrutura de página.
 - Criar sitemap ou wireframe.
 
+### Phase 14 — Marketplace intents
+- Gerar imagens para site (hero, banner, assets visuais).
+- Criar briefs e prompts de imagem.
+- Melhorar headlines e CTAs.
+- Melhorar copy de marketing.
+- Auditar CRO (conversão).
+- Otimizar formulários para conversão.
+- Auditar SEO.
+- Adicionar schema markup.
+- Criar estratégia de conteúdo.
+- Criar anúncios e criativos.
+- Criar conteúdo para redes sociais.
+- Criar sequência de emails.
+- Criar estratégia de lançamento.
+- Criar contexto de produto e marketing.
+- Extrair design system de referência.
+- Auditar website completo.
+
+### Phase 15 — Lovable-Style Design Pipeline
+- Definir direção visual para LP/site/dashboard (Premium Comercial, Editorial Clean, Conversão de Impacto).
+- Gerar DESIGN.md com especificação completa de design.
+- Selecionar template de marca baseado no segmento.
+- Gerar plano de componentes (Component-First Plan).
+- Criar checklist de QA visual.
+- Rodar pipeline completa de design (Product Marketing Context → Visual Directions → Brand Template → DESIGN.md → Component-First Plan → Visual QA Plan).
+- Referências a "visual Lovable", "design premium", "direção visual", "estilo editorial", "design de conversão".
+
+### Phase 16 — Design System First, SEO, Runtime Feedback, Preview QA Loop
+- Auditar design system do projeto (CSS variables, Tailwind, design tokens).
+- Detectar classes hardcoded (text-white, bg-gray-*, border-gray-*).
+- Gerar plano de tokens de design (cores, sombras, radius, motion, tipografia).
+- Gerar variantes shadcn/ui (Button, Card, Badge, Section, Hero).
+- Gerar plano de SEO (title, meta description, Open Graph, Twitter cards).
+- Gerar JSON-LD (Organization, LocalBusiness, Product, FAQPage).
+- Gerar checklist de HTML semântico.
+- Recomendar template de sandbox (nextjs, vite-react, astro).
+- Analisar feedback de runtime (console logs, network requests).
+- Classificar issues de runtime (hydration, a11y, JS errors, network errors).
+- Gerar plano de correção baseado em issues de runtime.
+- Rodar Preview QA Loop (checklist visual, matriz de viewports, regressões).
+- Gerar plano de tokens de design + shadcn/ui variants.
+- Referências a "design system first", "SEO by default", "preview QA", "runtime feedback", "sandbox template".
+
 ## Quando não usar
 
 Não use esta skill quando o pedido for:

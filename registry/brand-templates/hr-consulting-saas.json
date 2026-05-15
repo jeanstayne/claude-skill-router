@@ -1,0 +1,23 @@
+{
+  "id": "hr-consulting-saas",
+  "name": "HR Consulting SaaS",
+  "segments": ["RH", "recrutamento", "People Analytics", "gestão de pessoas", "HR Tech"],
+  "bestForBrands": ["Destaque System", "empresas de HR Tech", "consultorias de RH"],
+  "visualPersonality": ["profissional", "moderno", "humano", "organizado", "confiável"],
+  "recommendedPalette": {
+    "primary": "#4f46e5",
+    "accent": "#06b6d4",
+    "background": "#fafbff"
+  },
+  "typography": {
+    "headline": "Plus Jakarta Sans",
+    "body": "Inter"
+  },
+  "componentStyle": {
+    "buttons": "rounded-lg font-semibold shadow-sm hover:shadow-md transition-all",
+    "cards": "bg-white rounded-xl shadow-sm border border-indigo-50",
+    "sections": "py-20 bg-gradient-to-b from-white to-indigo-50/30"
+  },
+  "recommendedSections": ["Hero com headline + imagem de time", "Problemas de RH resolvidos", "Features da plataforma (cards)", "People Analytics Dashboard preview", "Depoimentos de gestores de RH", "Integrações e segurança", "FAQ", "CTA com solicitação de demo"],
+  "avoid": ["design frio e sem humanização", "excesso de gráficos", "cores muito escuras", "fotos genéricas de escritório"]
+}

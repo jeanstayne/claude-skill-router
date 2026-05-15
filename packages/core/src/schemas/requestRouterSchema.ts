@@ -17,7 +17,18 @@ export const IntentSchema = z.enum([
   'create-institutional-site', 'create-dashboard', 'improve-dashboard',
   'convert-visual-reference-to-code', 'create-design-system',
   'review-visual-quality', 'improve-copy', 'plan-website-structure',
-  'prepare-project', 'unknown',
+  'prepare-project',
+  // Phase 14 — Marketing, Image, SEO, CRO intents
+  'generate-site-images', 'create-hero-visual', 'create-image-prompts',
+  'improve-headlines', 'improve-marketing-copy',
+  'audit-page-cro', 'optimize-form-cro', 'optimize-popup-cro',
+  'optimize-seo', 'add-schema-markup',
+  'create-content-strategy', 'create-programmatic-seo-pages',
+  'create-ad-creative', 'create-paid-ads',
+  'create-social-content', 'create-email-sequence',
+  'create-launch-strategy', 'create-product-marketing-context',
+  'extract-design-system', 'audit-website',
+  'unknown',
 ]);
 export type Intent = z.infer<typeof IntentSchema>;
 
@@ -40,6 +51,16 @@ export const RouteRequestInputSchema = z.object({
 });
 export type RouteRequestInput = z.infer<typeof RouteRequestInputSchema>;
 
+export const ExternalSkillRecommendationResultSchema = z.object({
+  id: z.string(),
+  reason: z.string(),
+  riskLevel: z.enum(['low', 'medium', 'high']),
+  requiresExternalExecution: z.boolean(),
+  installCommand: z.string().optional(),
+  warning: z.string().optional(),
+});
+export type ExternalSkillRecommendationResult = z.infer<typeof ExternalSkillRecommendationResultSchema>;
+
 export const RouteRequestResultSchema = z.object({
   success: z.boolean(),
   intent: IntentSchema,
@@ -52,6 +73,10 @@ export const RouteRequestResultSchema = z.object({
   suggestedDesignEngines: z.array(z.object({
     id: z.string(), name: z.string(), reason: z.string(),
   })),
+  externalSkillRecommendations: z.object({
+    externalSkills: z.array(ExternalSkillRecommendationResultSchema),
+    warnings: z.array(z.string()),
+  }).optional(),
   executionPlan: z.array(ExecutionPlanStepSchema),
   dryRun: z.boolean(),
   requiresConfirm: z.boolean(),

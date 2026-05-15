@@ -1,0 +1,27 @@
+{
+  "id": "programmatic-seo",
+  "name": "Programmatic SEO",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "programmatic-seo",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill programmatic-seo",
+  "category": "seo",
+  "subcategories": [
+    "programmatic",
+    "seo",
+    "pages",
+    "scale"
+  ],
+  "bestFor": [
+    "create-programmatic-seo-pages",
+    "optimize-seo"
+  ],
+  "riskLevel": "medium",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Programmatic SEO strategy."
+}

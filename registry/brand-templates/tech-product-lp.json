@@ -1,0 +1,23 @@
+{
+  "id": "tech-product-lp",
+  "name": "Tech Product Landing Page",
+  "segments": ["tecnologia", "SaaS", "startup", "produto digital", "software"],
+  "bestForBrands": ["OptoScreen", "startups de tecnologia", "produtos SaaS B2B"],
+  "visualPersonality": ["moderno", "data-driven", "profissional", "eficiente", "inovador"],
+  "recommendedPalette": {
+    "primary": "#2563eb",
+    "accent": "#f59e0b",
+    "background": "#ffffff"
+  },
+  "typography": {
+    "headline": "Inter Tight",
+    "body": "Inter"
+  },
+  "componentStyle": {
+    "buttons": "rounded-lg font-semibold shadow-sm hover:shadow-md transition-all",
+    "cards": "bg-white rounded-xl shadow-sm border border-gray-100",
+    "sections": "py-20 md:py-28"
+  },
+  "recommendedSections": ["Hero com headline + demo visual", "Problema → Solução", "Features com ícones e descrições", "Métricas/Stats (ROI, clientes, tempo)", "Depoimentos de clientes", "Plano/Pricing", "FAQ", "CTA final com trial/demo"],
+  "avoid": ["design muito corporativo", "cores apagadas", "falta de prova social", "jargão técnico excessivo"]
+}

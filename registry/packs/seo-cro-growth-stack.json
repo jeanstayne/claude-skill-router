@@ -1,0 +1,23 @@
+{
+  "id": "seo-cro-growth-stack",
+  "name": "SEO + CRO Growth Stack",
+  "description": "Pack para auditoria e otimização de SEO, CRO, schema markup e estratégia de conteúdo para crescimento orgânico.",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page"],
+  "skills": [
+    "lp-conversion-architect",
+    "visual-qa-reviewer"
+  ],
+  "agents": [],
+  "externalSkillsSuggested": [
+    "seo-audit",
+    "schema-markup",
+    "page-cro",
+    "programmatic-seo",
+    "content-strategy",
+    "competitor-alternatives"
+  ],
+  "maxSkills": 2,
+  "maxAgents": 0,
+  "advanced": false,
+  "note": "Pack para growth — SEO, CRO e conteúdo. Skills de SEO podem precisar de acesso à rede para auditoria."
+}

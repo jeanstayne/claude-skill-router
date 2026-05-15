@@ -1,0 +1,32 @@
+{
+  "id": "premium-lp-marketing-stack",
+  "name": "Premium LP + Marketing Stack",
+  "description": "Pack completo para LP premium com marketing, copy e CRO. Combina arquitetura de LP, direção visual premium e otimização de conversão.",
+  "projectTypes": ["landing-page"],
+  "skills": [
+    "relume-site-architect",
+    "lp-conversion-architect",
+    "brand-visual-director",
+    "lovable-style-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer",
+    "conversion-copywriter"
+  ],
+  "optionalSkills": [
+    "visual-qa-reviewer"
+  ],
+  "externalSkillsSuggested": [
+    "frontend-design",
+    "copywriting",
+    "page-cro",
+    "marketing-psychology",
+    "seo-audit"
+  ],
+  "maxSkills": 5,
+  "maxAgents": 3,
+  "advanced": true,
+  "note": "Stack premium para landing pages de alta conversão com marketing integrado."
+}

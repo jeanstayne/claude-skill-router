@@ -1,0 +1,27 @@
+{
+  "id": "popup-cro",
+  "name": "Popup CRO",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "popup-cro",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill popup-cro",
+  "category": "marketing",
+  "subcategories": [
+    "popup",
+    "cro",
+    "modal",
+    "lead"
+  ],
+  "bestFor": [
+    "optimize-popup-cro",
+    "improve-landing-page"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Popup and modal optimization for conversion."
+}

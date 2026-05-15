@@ -1,0 +1,27 @@
+{
+  "id": "ad-creative",
+  "name": "Ad Creative",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "ad-creative",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill ad-creative",
+  "category": "ads",
+  "subcategories": [
+    "ads",
+    "creative",
+    "copy",
+    "visual"
+  ],
+  "bestFor": [
+    "create-ad-creative",
+    "create-paid-ads"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Ad creative strategy — headlines, visuals, angles for Meta, Google, LinkedIn."
+}

@@ -1,0 +1,27 @@
+{
+  "id": "content-strategy",
+  "name": "Content Strategy",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "content-strategy",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill content-strategy",
+  "category": "seo",
+  "subcategories": [
+    "content",
+    "strategy",
+    "blog",
+    "topics"
+  ],
+  "bestFor": [
+    "create-content-strategy",
+    "optimize-seo"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Content strategy — topic clusters, content calendar, pillar pages."
+}

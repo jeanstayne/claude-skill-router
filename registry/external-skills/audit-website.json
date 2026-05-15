@@ -1,0 +1,27 @@
+{
+  "id": "audit-website",
+  "name": "Audit Website",
+  "source": "skills.sh",
+  "repository": "https://github.com/squirrelscan/skills",
+  "skillPath": "audit-website",
+  "installCommand": "npx skills add https://github.com/squirrelscan/skills --skill audit-website",
+  "category": "audit",
+  "subcategories": [
+    "audit",
+    "website",
+    "performance",
+    "accessibility"
+  ],
+  "bestFor": [
+    "audit-website",
+    "improve-landing-page"
+  ],
+  "riskLevel": "high",
+  "requiresExternalCli": true,
+  "requiresLogin": false,
+  "requiresNetwork": true,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Full website audit. Requires SquirrelScan CLI. NEVER auto-execute."
+}

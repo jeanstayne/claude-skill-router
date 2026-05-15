@@ -1,0 +1,26 @@
+{
+  "id": "theme-factory",
+  "name": "Theme Factory",
+  "source": "skills.sh",
+  "repository": "https://github.com/anthropics/skills",
+  "skillPath": "theme-factory",
+  "installCommand": "npx skills add https://github.com/anthropics/skills --skill theme-factory",
+  "category": "design",
+  "subcategories": [
+    "theme",
+    "tokens",
+    "colors"
+  ],
+  "bestFor": [
+    "create-design-system",
+    "create-landing-page"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Theme generation with design tokens and color systems."
+}

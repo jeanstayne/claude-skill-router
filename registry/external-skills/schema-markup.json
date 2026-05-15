@@ -1,0 +1,27 @@
+{
+  "id": "schema-markup",
+  "name": "Schema Markup",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "schema-markup",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill schema-markup",
+  "category": "seo",
+  "subcategories": [
+    "schema",
+    "rich-results",
+    "structured-data",
+    "json-ld"
+  ],
+  "bestFor": [
+    "add-schema-markup",
+    "optimize-seo"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Generate schema markup (JSON-LD) for rich results."
+}

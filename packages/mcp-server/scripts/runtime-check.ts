@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Runtime check script for MCP Server handlers
-// Simulates the 10 MCP tools locally without Claude Code
+// Simulates the 16 MCP tools locally without Claude Code (Phase 14)
 
 import * as path from 'node:path';
 import * as fs from 'node:fs/promises';
@@ -206,6 +206,78 @@ async function main() {
     confirm: false,
   });
   check('returns success=false for global', installAutopilotGlobalBlockResult.success === false);
+  console.log('');
+
+  // 13. list_external_skills
+  console.log('13. list_external_skills');
+  const { listExternalSkillsTool } = await import('../src/tools/listExternalSkillsTool.js');
+  const listExtResult = await listExternalSkillsTool.handler({});
+  check('returns skills array', Array.isArray(listExtResult.skills));
+  check('has total count', typeof listExtResult.total === 'number');
+  check('total matches skills length', listExtResult.total === listExtResult.skills.length);
+  check('skills have required fields', listExtResult.skills.length > 0 && listExtResult.skills.every((s: Record<string, unknown>) => s.id && s.name && s.category));
+  console.log('');
+
+  // 14. list_external_skills — filter by category
+  console.log('14. list_external_skills (filter by category)');
+  const listByCatResult = await listExternalSkillsTool.handler({ category: 'marketing' });
+  check('has marketing skills', listByCatResult.skills.length > 0);
+  check('all skills are marketing', listByCatResult.skills.every((s: Record<string, unknown>) => s.category === 'marketing'));
+  console.log('');
+
+  // 15. recommend_external_skills
+  console.log('15. recommend_external_skills');
+  const { recommendExternalSkillsTool } = await import('../src/tools/recommendExternalSkillsTool.js');
+  const recExtResult = await recommendExternalSkillsTool.handler({ projectPath: FIXTURE, userRequest: 'melhore as headlines da LP', maxResults: 5 });
+  check('returns externalSkills array', Array.isArray(recExtResult.externalSkills));
+  check('returns warnings array', Array.isArray(recExtResult.warnings));
+  check('has note', typeof recExtResult.note === 'string');
+  console.log('');
+
+  // 16. generate_image_brief
+  console.log('16. generate_image_brief');
+  const { generateImageBriefTool } = await import('../src/tools/generateImageBriefTool.js');
+  const imageBriefResult = await generateImageBriefTool.handler({ projectPath: FIXTURE, userRequest: 'hero da landing page', brand: 'TestBrand' });
+  check('has brief objective', typeof imageBriefResult.brief?.objective === 'string');
+  check('has brief prompt', typeof imageBriefResult.brief?.prompt === 'string');
+  check('requires confirm', imageBriefResult.requiresConfirm === true);
+  check('requires external execution', imageBriefResult.requiresExternalExecution === true);
+  check('has warnings', imageBriefResult.warnings.length > 0);
+  console.log('');
+
+  // 17. generate_copy_variants
+  console.log('17. generate_copy_variants');
+  const { generateCopyVariantsTool } = await import('../src/tools/generateCopyVariantsTool.js');
+  const copyVariantsResult = await generateCopyVariantsTool.handler({ projectPath: FIXTURE, userRequest: 'LP de vendas', variantCount: 3 });
+  check('has 3 headlines', copyVariantsResult.headlines.length === 3);
+  check('has subheadlines', copyVariantsResult.subheadlines.length > 0);
+  check('has ctas', copyVariantsResult.ctas.length > 0);
+  check('has angles', copyVariantsResult.angles.length > 0);
+  check('does not require external execution', copyVariantsResult.requiresExternalExecution === false);
+  console.log('');
+
+  // 18. generate_marketing_plan
+  console.log('18. generate_marketing_plan');
+  const { generateMarketingPlanTool } = await import('../src/tools/generateMarketingPlanTool.js');
+  const mktPlanResult = await generateMarketingPlanTool.handler({ projectPath: FIXTURE, userRequest: 'lançamento de produto' });
+  check('has plan offer', typeof mktPlanResult.plan?.offer === 'string');
+  check('has channels', mktPlanResult.plan?.channels?.length > 0);
+  check('has ads', mktPlanResult.plan?.ads?.length > 0);
+  check('has social', mktPlanResult.plan?.social?.length > 0);
+  check('has email', mktPlanResult.plan?.email?.length > 0);
+  check('has launch phases', mktPlanResult.plan?.launch?.phases?.length > 0);
+  check('has assets', mktPlanResult.plan?.assets?.length > 0);
+  console.log('');
+
+  // 19. generate_cro_seo_audit_plan
+  console.log('19. generate_cro_seo_audit_plan');
+  const { generateCROSEOPlanTool } = await import('../src/tools/generateCROSEOPlanTool.js');
+  const croSeoResult = await generateCROSEOPlanTool.handler({ projectPath: FIXTURE, userRequest: 'LP de conversão' });
+  check('has cro checklist', croSeoResult.plan?.cro?.length > 0);
+  check('has seo checklist', croSeoResult.plan?.seo?.length > 0);
+  check('has schema suggestions', croSeoResult.plan?.schema?.length > 0);
+  check('does not require external execution', croSeoResult.requiresExternalExecution === false);
+  check('recommends external skills', croSeoResult.recommendedExternalSkills?.length > 0);
   console.log('');
 
   // Cleanup temp

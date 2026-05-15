@@ -1,0 +1,25 @@
+{
+  "id": "visual-asset-generation-stack",
+  "name": "Visual Asset Generation Stack",
+  "description": "Pack para geração de briefs, prompts e direção de assets visuais (imagens, hero, banners). NUNCA gera imagens automaticamente — apenas briefs e prompts.",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page"],
+  "skills": [
+    "brand-visual-director",
+    "stitch-design-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer"
+  ],
+  "externalSkillsSuggested": [
+    "canvas-design",
+    "theme-factory",
+    "gpt-image-2",
+    "ai-image-generation",
+    "ad-creative"
+  ],
+  "maxSkills": 3,
+  "maxAgents": 1,
+  "advanced": true,
+  "note": "AVISO: Skills de geração de imagem (gpt-image-2, ai-image-generation) requerem CLI/login externo. Este pack gera apenas briefs e prompts — nunca executa geração automaticamente."
+}

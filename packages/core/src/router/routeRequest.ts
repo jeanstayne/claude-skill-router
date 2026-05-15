@@ -5,6 +5,7 @@ import { extractRequestSignals } from './extractRequestSignals.js';
 import { classifyIntent } from './classifyIntent.js';
 import { selectPackForIntent } from './selectPackForIntent.js';
 import { generateExecutionPlan } from './generateExecutionPlan.js';
+import { recommendExternalSkills } from '../registry/recommendExternalSkills.js';
 import type { RouteRequestInput, RouteRequestResult } from '../schemas/requestRouterSchema.js';
 import * as path from 'node:path';
 
@@ -128,7 +129,26 @@ export async function routeRequest(input: Omit<RouteRequestInput, 'dryRun' | 'co
     requiresConfirm: !dryRun,
   });
 
-  // 7. Apply if mode is 'apply' and dryRun is false
+  // 7. Recommend external skills (Phase 14)
+  let externalSkillRecommendations: RouteRequestResult['externalSkillRecommendations'];
+  try {
+    const extResult = await recommendExternalSkills({
+      intent,
+      userRequest,
+      projectType: projectScan.projectType,
+      requestSignals: requestSignals as Record<string, unknown>,
+    }, getRegistryPath());
+    if (extResult.externalSkills.length > 0) {
+      externalSkillRecommendations = {
+        externalSkills: extResult.externalSkills,
+        warnings: extResult.warnings,
+      };
+    }
+  } catch {
+    // External skills not available — skip
+  }
+
+  // 8. Apply if mode is 'apply' and dryRun is false
   let applied = false;
   if (mode === 'apply' && !dryRun && confirm && selectedPack !== 'none') {
     const installResult = await installSkillPack({
@@ -151,6 +171,7 @@ export async function routeRequest(input: Omit<RouteRequestInput, 'dryRun' | 'co
     skills,
     agents,
     suggestedDesignEngines,
+    externalSkillRecommendations,
     executionPlan,
     dryRun,
     requiresConfirm: !dryRun,

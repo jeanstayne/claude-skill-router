@@ -1,0 +1,26 @@
+{
+  "id": "web-design-guidelines",
+  "name": "Web Design Guidelines",
+  "source": "skills.sh",
+  "repository": "https://github.com/vercel-labs/agent-skills",
+  "skillPath": "web-design-guidelines",
+  "installCommand": "npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines",
+  "category": "design",
+  "subcategories": [
+    "web",
+    "guidelines",
+    "best-practices"
+  ],
+  "bestFor": [
+    "create-landing-page",
+    "create-institutional-site"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Web design best practices from Vercel."
+}

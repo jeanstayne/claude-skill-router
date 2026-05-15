@@ -1,0 +1,23 @@
+{
+  "id": "perfume-luxury",
+  "name": "Perfume Luxury",
+  "segments": ["perfumaria", "luxo", "beleza premium", "moda", "acessórios de luxo"],
+  "bestForBrands": ["JK Perfumes", "marcas de perfumaria de luxo", "grifes"],
+  "visualPersonality": ["luxuoso", "exclusivo", "sensorial", "misterioso", "sofisticado"],
+  "recommendedPalette": {
+    "primary": "#1c1c1c",
+    "accent": "#c9a96e",
+    "background": "#fafaf8"
+  },
+  "typography": {
+    "headline": "Playfair Display",
+    "body": "Inter"
+  },
+  "componentStyle": {
+    "buttons": "rounded-none border border-gold/30 px-10 py-3 uppercase tracking-[0.2em] text-sm hover:bg-gold/5 transition-colors",
+    "cards": "bg-white rounded-none shadow-sm border border-gray-100",
+    "sections": "py-24 md:py-32"
+  },
+  "recommendedSections": ["Hero com visual do frasco em close-up", "Família olfativa e notas", "Conceito e inspiração da fragrância", "Depoimentos e reviews", "Sugestão de uso/ocasião", "Edições limitadas ou coleção", "Garantia e política de troca", "CTA para compra ou consultoria olfativa"],
+  "avoid": ["visual comercial agressivo", "cores vibrantes", "muitos elementos competindo", "linguagem informal ou genérica"]
+}

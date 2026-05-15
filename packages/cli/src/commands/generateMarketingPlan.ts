@@ -1,0 +1,66 @@
+export async function generateMarketingPlanCommand(
+  projectPath: string,
+  userRequest: string,
+  options: { json?: boolean } = {}
+) {
+  const plan = {
+    offer: 'Proposta de valor principal do produto/serviço (a ser refinado com product-marketing-context)',
+    audience: 'Definir público-alvo: setor, cargo, dores, desejos, canais onde está',
+    channels: ['Landing Page', 'Meta Ads (Facebook/Instagram)', 'Google Ads', 'LinkedIn', 'Email'],
+    ads: [
+      { channel: 'Meta Ads', headline: 'Headline principal com gancho de curiosidade', visualBrief: 'Imagem/vídeo com contraste visual, pessoas ou produto em contexto' },
+      { channel: 'Google Ads', headline: 'Headline com keyword + benefício claro', visualBrief: 'N/A (search ad)' },
+      { channel: 'LinkedIn', headline: 'Headline profissional com dados/resultados', visualBrief: 'Imagem corporativa premium, infográfico ou case' },
+    ],
+    social: [
+      { platform: 'Instagram', contentIdea: 'Reels mostrando bastidores/resultados', format: 'Reels 9:16' },
+      { platform: 'Instagram', contentIdea: 'Carrossel educativo sobre o problema que resolve', format: 'Carousel' },
+      { platform: 'LinkedIn', contentIdea: 'Post de autoridade com dados do setor', format: 'Text + Image' },
+    ],
+    email: [
+      { type: 'Welcome', subject: 'Bem-vindo(a) — sua jornada começa aqui', goal: 'Boas-vindas e primeiro valor' },
+      { type: 'Nurture', subject: 'Como [empresa X] resolveu [problema Y]', goal: 'Prova social e caso de uso' },
+      { type: 'Offer', subject: 'Está pronto para [benefício principal]?', goal: 'Conversão para conversa/demo' },
+    ],
+    launch: {
+      phases: [
+        'Pré-lançamento: teaser e expectativa (7 dias)',
+        'Lançamento: oferta principal e campanhas ativas (14 dias)',
+        'Pós-lançamento: follow-up, retargeting e nurture (30 dias)',
+      ],
+      timeline: '8 semanas (2 de preparação + 2 de lançamento + 4 de pós)',
+    },
+    assets: [
+      'Landing page otimizada',
+      '3 criativos para Meta Ads',
+      '2 criativos para Google Ads',
+      '5 posts para Instagram',
+      '3 artigos/posts para LinkedIn',
+      'Sequência de 4 emails',
+      '1 lead magnet (e-book, checklist ou webinar)',
+    ],
+  };
+
+  if (options.json) {
+    console.log(JSON.stringify({
+      plan,
+      recommendedExternalSkills: ['launch-strategy', 'ad-creative', 'social-content', 'email-sequence', 'marketing-ideas'],
+      requiresExternalExecution: false,
+    }, null, 2));
+  } else {
+    console.log(`Marketing Plan for: "${userRequest}"\n`);
+    console.log('Channels:', plan.channels.join(', '));
+    console.log('\nAds:');
+    plan.ads.forEach(a => console.log(`  ${a.channel}: ${a.headline}`));
+    console.log('\nSocial:');
+    plan.social.forEach(s => console.log(`  ${s.platform}: ${s.contentIdea}`));
+    console.log('\nEmail:');
+    plan.email.forEach(e => console.log(`  ${e.type} — ${e.subject}`));
+    console.log('\nLaunch:');
+    plan.launch.phases.forEach(p => console.log(`  - ${p}`));
+    console.log(`  Timeline: ${plan.launch.timeline}`);
+    console.log('\nAssets needed:', plan.assets.length);
+  }
+
+  return { plan, requiresExternalExecution: false };
+}

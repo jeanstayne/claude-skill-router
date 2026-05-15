@@ -1,0 +1,20 @@
+{
+  "id": "marketplace-cro-seo-auditor",
+  "name": "Marketplace CRO/SEO Auditor",
+  "version": "1.0.0",
+  "category": "seo",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page"],
+  "stacks": ["tailwind"],
+  "description": "Adapter para auditoria de CRO, SEO, schema markup e otimização de conversão. Inspirado em page-cro, seo-audit, schema-markup, programmatic-seo, audit-website.",
+  "maxDefaultUse": true,
+  "externalSkillsRef": [
+    "page-cro",
+    "seo-audit",
+    "schema-markup",
+    "programmatic-seo",
+    "audit-website"
+  ],
+  "riskLevel": "medium",
+  "autoExecuteAllowed": true,
+  "phase": 14
+}

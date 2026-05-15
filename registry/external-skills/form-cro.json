@@ -1,0 +1,27 @@
+{
+  "id": "form-cro",
+  "name": "Form CRO",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "form-cro",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill form-cro",
+  "category": "marketing",
+  "subcategories": [
+    "form",
+    "cro",
+    "conversion",
+    "lead"
+  ],
+  "bestFor": [
+    "optimize-form-cro",
+    "improve-landing-page"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Form optimization for conversion."
+}

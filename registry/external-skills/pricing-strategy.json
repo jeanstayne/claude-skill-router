@@ -1,0 +1,26 @@
+{
+  "id": "pricing-strategy",
+  "name": "Pricing Strategy",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "pricing-strategy",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill pricing-strategy",
+  "category": "marketing",
+  "subcategories": [
+    "pricing",
+    "strategy",
+    "value"
+  ],
+  "bestFor": [
+    "improve-marketing-copy",
+    "create-product-marketing-context"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Pricing strategy — tiers, anchoring, value communication."
+}

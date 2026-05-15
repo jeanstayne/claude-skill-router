@@ -1,0 +1,21 @@
+{
+  "id": "marketplace-copy-director",
+  "name": "Marketplace Copy Director",
+  "version": "1.0.0",
+  "category": "marketing",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page"],
+  "stacks": ["tailwind"],
+  "description": "Adapter para copywriting, headlines, CTAs e otimização de texto de conversão. Inspirado em product-marketing-context, copywriting, marketing-psychology, page-cro, form-cro, pricing-strategy.",
+  "maxDefaultUse": true,
+  "externalSkillsRef": [
+    "product-marketing-context",
+    "copywriting",
+    "marketing-psychology",
+    "page-cro",
+    "form-cro",
+    "pricing-strategy"
+  ],
+  "riskLevel": "low",
+  "autoExecuteAllowed": true,
+  "phase": 14
+}

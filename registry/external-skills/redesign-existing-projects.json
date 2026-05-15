@@ -1,0 +1,26 @@
+{
+  "id": "redesign-existing-projects",
+  "name": "Redesign Existing Projects",
+  "source": "skills.sh",
+  "repository": "https://github.com/leonxlnx/taste-skill",
+  "skillPath": "redesign-existing-projects",
+  "installCommand": "npx skills add https://github.com/leonxlnx/taste-skill --skill redesign-existing-projects",
+  "category": "design",
+  "subcategories": [
+    "redesign",
+    "refactor",
+    "visual"
+  ],
+  "bestFor": [
+    "improve-landing-page",
+    "improve-dashboard"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Redesign approach for existing projects without full rewrite."
+}

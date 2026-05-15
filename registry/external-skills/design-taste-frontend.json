@@ -1,0 +1,26 @@
+{
+  "id": "design-taste-frontend",
+  "name": "Design Taste Frontend",
+  "source": "skills.sh",
+  "repository": "https://github.com/leonxlnx/taste-skill",
+  "skillPath": "design-taste-frontend",
+  "installCommand": "npx skills add https://github.com/leonxlnx/taste-skill --skill design-taste-frontend",
+  "category": "design",
+  "subcategories": [
+    "frontend",
+    "taste",
+    "style"
+  ],
+  "bestFor": [
+    "improve-landing-page",
+    "create-landing-page"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Frontend design taste — styling, spacing, typography, and composition."
+}

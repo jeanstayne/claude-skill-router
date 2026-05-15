@@ -1,0 +1,26 @@
+{
+  "id": "competitor-alternatives",
+  "name": "Competitor Alternatives",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "competitor-alternatives",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill competitor-alternatives",
+  "category": "seo",
+  "subcategories": [
+    "competitor",
+    "alternatives",
+    "research"
+  ],
+  "bestFor": [
+    "create-content-strategy",
+    "optimize-seo"
+  ],
+  "riskLevel": "medium",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": true,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Competitor analysis — alternatives pages, comparison content."
+}

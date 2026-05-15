@@ -1,0 +1,40 @@
+{
+  "id": "nextjs-app-router",
+  "name": "Next.js App Router (minimal)",
+  "framework": "nextjs",
+  "language": "typescript",
+  "ui": [],
+  "version": "1.0.0",
+  "recommendedFor": [
+    "api-backend",
+    "blog",
+    "static-site",
+    "multi-page-site",
+    "fullstack-application"
+  ],
+  "requiredFiles": [
+    "package.json",
+    "tsconfig.json",
+    "next.config.ts",
+    "src/app/layout.tsx",
+    "src/app/page.tsx",
+    "src/app/globals.css"
+  ],
+  "recommendedDependencies": {
+    "dependencies": {
+      "next": "^14.0.0",
+      "react": "^18.3.0",
+      "react-dom": "^18.3.0"
+    },
+    "devDependencies": {
+      "typescript": "^5.0.0",
+      "@types/react": "^18.3.0",
+      "@types/node": "^20.0.0"
+    }
+  },
+  "cssStrategy": "css-modules-or-global-css",
+  "componentStrategy": "server-components",
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "port": 3000
+}

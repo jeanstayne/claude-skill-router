@@ -1,0 +1,18 @@
+{
+  "id": "design-system-first",
+  "name": "Design System First + SEO + Preview QA",
+  "description": "Pipeline completo de qualidade: Design System Enforcer (tokens, variantes, checklist), SEO by Default (meta tags, JSON-LD, HTML semântico), Sandbox Template (recomendação de stack), Runtime Feedback (análise de logs/rede), Preview QA Loop (checklist visual, matriz de viewports, regressões).",
+  "projectTypes": ["landing-page", "institutional-site", "dashboard-saas", "ecommerce-page"],
+  "skills": [
+    "design-system-first",
+    "brand-visual-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer"
+  ],
+  "optionalSkills": ["visual-qa-reviewer"],
+  "maxSkills": 4,
+  "maxAgents": 2
+}

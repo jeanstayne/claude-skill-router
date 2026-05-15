@@ -1,0 +1,25 @@
+{
+  "id": "design-system-extraction-stack",
+  "name": "Design System Extraction Stack",
+  "description": "Pack para extrair design system de referências visuais — tokens, cores, tipografia, tema Tailwind e guia visual.",
+  "projectTypes": ["landing-page", "institutional-site", "dashboard", "design-system"],
+  "skills": [
+    "stitch-design-director",
+    "brand-visual-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer"
+  ],
+  "externalSkillsSuggested": [
+    "extract-design-system",
+    "tailwind-design-system",
+    "theme-factory",
+    "frontend-design",
+    "stitch-design-taste"
+  ],
+  "maxSkills": 3,
+  "maxAgents": 1,
+  "advanced": true,
+  "note": "Pack para extração de design system. Evita cópia pixel-perfect indevida — extrai tokens e conceitos, não assets."
+}

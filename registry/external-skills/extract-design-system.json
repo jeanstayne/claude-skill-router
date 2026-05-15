@@ -1,0 +1,26 @@
+{
+  "id": "extract-design-system",
+  "name": "Extract Design System",
+  "source": "skills.sh",
+  "repository": "https://github.com/arvindrk/extract-design-system",
+  "skillPath": "extract-design-system",
+  "installCommand": "npx skills add https://github.com/arvindrk/extract-design-system --skill extract-design-system",
+  "category": "design",
+  "subcategories": [
+    "extract",
+    "tokens",
+    "reference"
+  ],
+  "bestFor": [
+    "create-design-system",
+    "convert-visual-reference-to-code"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Extract design system tokens from visual references."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "lovable-style-design-pipeline",
+  "name": "Lovable-Style Design Pipeline",
+  "description": "Pipeline completo de design visual premium: contexto de produto, 3 direções visuais, template de marca, DESIGN.md, plano component-first e QA visual",
+  "projectTypes": ["landing-page", "institutional-site", "dashboard-saas", "ecommerce-page"],
+  "skills": [
+    "lovable-style-pipeline",
+    "lp-conversion-architect",
+    "brand-visual-director",
+    "visual-qa-reviewer"
+  ],
+  "agents": [
+    "ui-designer",
+    "frontend-developer",
+    "conversion-copywriter"
+  ],
+  "optionalSkills": [
+    "visual-qa-reviewer"
+  ],
+  "maxSkills": 4,
+  "maxAgents": 3
+}

@@ -1,0 +1,28 @@
+{
+  "id": "gpt-image-2",
+  "name": "GPT Image 2",
+  "source": "skills.sh",
+  "repository": "https://github.com/agentspace-so/agent-skills",
+  "skillPath": "gpt-image-2",
+  "installCommand": "npx skills add https://github.com/agentspace-so/agent-skills --skill gpt-image-2",
+  "category": "image",
+  "subcategories": [
+    "image",
+    "gpt",
+    "generation",
+    "dalle"
+  ],
+  "bestFor": [
+    "generate-site-images",
+    "create-hero-visual",
+    "create-image-prompts"
+  ],
+  "riskLevel": "high",
+  "requiresExternalCli": true,
+  "requiresLogin": true,
+  "requiresNetwork": true,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "GPT image generation (DALL-E). NEVER auto-execute."
+}

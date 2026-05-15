@@ -1,0 +1,44 @@
+{
+  "id": "nextjs-api",
+  "name": "Next.js API + Prisma + PostgreSQL",
+  "framework": "nextjs",
+  "language": "typescript",
+  "ui": [],
+  "version": "1.0.0",
+  "recommendedFor": [
+    "api-backend",
+    "fullstack-application",
+    "sass-application",
+    "database-driven-app"
+  ],
+  "requiredFiles": [
+    "package.json",
+    "tsconfig.json",
+    "next.config.ts",
+    "prisma/schema.prisma",
+    "src/app/layout.tsx",
+    "src/app/page.tsx",
+    "src/app/api/health/route.ts"
+  ],
+  "recommendedDependencies": {
+    "dependencies": {
+      "next": "^14.0.0",
+      "react": "^18.3.0",
+      "react-dom": "^18.3.0",
+      "@prisma/client": "^5.0.0",
+      "zod": "^3.0.0"
+    },
+    "devDependencies": {
+      "typescript": "^5.0.0",
+      "@types/react": "^18.3.0",
+      "@types/node": "^20.0.0",
+      "prisma": "^5.0.0",
+      "tsx": "^4.0.0"
+    }
+  },
+  "cssStrategy": "css-modules-or-global-css",
+  "componentStrategy": "server-components-with-api-routes",
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "port": 3000
+}

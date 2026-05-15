@@ -1,0 +1,27 @@
+{
+  "id": "email-sequence",
+  "name": "Email Sequence",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "email-sequence",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill email-sequence",
+  "category": "social",
+  "subcategories": [
+    "email",
+    "sequence",
+    "nurture",
+    "onboarding"
+  ],
+  "bestFor": [
+    "create-email-sequence",
+    "create-launch-strategy"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Email sequence strategy — welcome, nurture, onboarding, re-engagement."
+}

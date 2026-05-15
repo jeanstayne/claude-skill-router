@@ -1,0 +1,28 @@
+{
+  "id": "marketing-psychology",
+  "name": "Marketing Psychology",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "marketing-psychology",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill marketing-psychology",
+  "category": "marketing",
+  "subcategories": [
+    "psychology",
+    "persuasion",
+    "framing",
+    "triggers"
+  ],
+  "bestFor": [
+    "improve-marketing-copy",
+    "improve-headlines",
+    "create-product-marketing-context"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Ethical marketing psychology — framing, social proof, urgency."
+}

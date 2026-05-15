@@ -1,0 +1,27 @@
+{
+  "id": "product-marketing-context",
+  "name": "Product Marketing Context",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "product-marketing-context",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill product-marketing-context",
+  "category": "marketing",
+  "subcategories": [
+    "product",
+    "strategy",
+    "positioning"
+  ],
+  "bestFor": [
+    "improve-marketing-copy",
+    "improve-headlines",
+    "create-product-marketing-context"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Product marketing context — positioning, messaging, value proposition."
+}

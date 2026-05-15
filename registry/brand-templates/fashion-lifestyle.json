@@ -1,0 +1,23 @@
+{
+  "id": "fashion-lifestyle",
+  "name": "Fashion Lifestyle",
+  "segments": ["moda", "vestuário", "acessórios", "lifestyle", "design autoral"],
+  "bestForBrands": ["ELIZÊ", "marcas de moda autoral", "ateliês", "lojas de roupa premium"],
+  "visualPersonality": ["elegante", "aspiracional", "criativo", "íntimo", "autêntico"],
+  "recommendedPalette": {
+    "primary": "#2d2d2d",
+    "accent": "#c0956c",
+    "background": "#faf9f7"
+  },
+  "typography": {
+    "headline": "Playfair Display",
+    "body": "Inter"
+  },
+  "componentStyle": {
+    "buttons": "rounded-none border border-black/10 px-8 py-3 uppercase tracking-wider text-xs hover:bg-black hover:text-white transition-colors",
+    "cards": "bg-white rounded-none shadow-none border border-gray-100",
+    "sections": "py-20 md:py-28"
+  },
+  "recommendedSections": ["Hero editorial com coleção em destaque", "Sobre a marca/designer", "Coleção atual (grid de produtos)", "Processo criativo e materiais", "Lookbook/Editorial", "Depoimentos de clientes", "Política de troca e tamanhos", "CTA para compra ou consultoria de estilo"],
+  "avoid": ["visual fast fashion", "cores saturadas", "promoções agressivas", "layout muito comercial"]
+}

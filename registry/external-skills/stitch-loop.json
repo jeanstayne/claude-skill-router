@@ -1,0 +1,25 @@
+{
+  "id": "stitch-loop",
+  "name": "Stitch Loop",
+  "source": "skills.sh",
+  "repository": "https://github.com/google-labs-code/stitch-skills",
+  "skillPath": "stitch-loop",
+  "installCommand": "npx skills add https://github.com/google-labs-code/stitch-skills --skill stitch-loop",
+  "category": "design",
+  "subcategories": [
+    "stitch",
+    "loop",
+    "generation"
+  ],
+  "bestFor": [
+    "create-design-system"
+  ],
+  "riskLevel": "high",
+  "requiresExternalCli": true,
+  "requiresLogin": false,
+  "requiresNetwork": true,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Iterative design loop with Stitch. Requires Stitch CLI."
+}

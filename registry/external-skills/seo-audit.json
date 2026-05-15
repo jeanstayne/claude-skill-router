@@ -1,0 +1,28 @@
+{
+  "id": "seo-audit",
+  "name": "SEO Audit",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "seo-audit",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill seo-audit",
+  "category": "seo",
+  "subcategories": [
+    "seo",
+    "audit",
+    "on-page",
+    "technical"
+  ],
+  "bestFor": [
+    "optimize-seo",
+    "improve-landing-page",
+    "create-institutional-site"
+  ],
+  "riskLevel": "medium",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": true,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "SEO audit — on-page, technical, content gaps."
+}

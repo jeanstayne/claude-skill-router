@@ -1,0 +1,23 @@
+{
+  "id": "agro-institutional",
+  "name": "Agro Institutional",
+  "segments": ["agronegócio", "agricultura", "pecuária", "consultoria agrícola", "insumos agro"],
+  "bestForBrands": ["Ativaagro", "Destaque Agro", "agtechs", "cooperativas agrícolas"],
+  "visualPersonality": ["técnico", "confiável", "próximo", "robusto", "parceiro"],
+  "recommendedPalette": {
+    "primary": "#2d6a4f",
+    "accent": "#f0a500",
+    "background": "#fafbf9"
+  },
+  "typography": {
+    "headline": "Plus Jakarta Sans",
+    "body": "Inter"
+  },
+  "componentStyle": {
+    "buttons": "rounded-lg font-semibold shadow-sm hover:shadow-md transition-all",
+    "cards": "bg-white rounded-xl shadow-sm border border-green-100",
+    "sections": "py-20 bg-gradient-to-b from-white to-green-50/30"
+  },
+  "recommendedSections": ["Hero com campo/imagem rural", "Problema e solução", "Serviços/Produtos com ícones", "Resultados e métricas (stats)", "Depoimentos de produtores", "FAQ técnico", "CTA com formulário de contato"],
+  "avoid": ["design muito corporativo", "cores frias e distantes", "linguagem muito técnica e impessoal", "stock photos urbanas"]
+}

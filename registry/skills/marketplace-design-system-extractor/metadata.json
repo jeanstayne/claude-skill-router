@@ -1,0 +1,20 @@
+{
+  "id": "marketplace-design-system-extractor",
+  "name": "Marketplace Design System Extractor",
+  "version": "1.0.0",
+  "category": "design",
+  "projectTypes": ["landing-page", "institutional-site", "dashboard", "design-system"],
+  "stacks": ["tailwind", "shadcn"],
+  "description": "Adapter para extração de design system — tokens visuais, DESIGN.md, tokens Tailwind, tema e guia visual. Inspirado em extract-design-system, tailwind-design-system, frontend-design, theme-factory, stitch-design-taste. Evita cópia pixel-perfect indevida.",
+  "maxDefaultUse": true,
+  "externalSkillsRef": [
+    "extract-design-system",
+    "tailwind-design-system",
+    "frontend-design",
+    "theme-factory",
+    "stitch-design-taste"
+  ],
+  "riskLevel": "low",
+  "autoExecuteAllowed": true,
+  "phase": 14
+}

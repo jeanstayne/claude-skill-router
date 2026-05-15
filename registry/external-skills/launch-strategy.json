@@ -1,0 +1,27 @@
+{
+  "id": "launch-strategy",
+  "name": "Launch Strategy",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "launch-strategy",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill launch-strategy",
+  "category": "marketing",
+  "subcategories": [
+    "launch",
+    "strategy",
+    "g2m",
+    "product-hunt"
+  ],
+  "bestFor": [
+    "create-launch-strategy",
+    "create-product-marketing-context"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Launch strategy — Product Hunt, go-to-market, pre/post-launch."
+}

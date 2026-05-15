@@ -1,0 +1,23 @@
+{
+  "id": "paid-campaign-stack",
+  "name": "Paid Campaign Stack",
+  "description": "Pack para criação de campanhas pagas — criativos, estratégia de ads, copy para anúncios e estrutura de campanha.",
+  "projectTypes": ["landing-page", "ecommerce-page"],
+  "skills": [
+    "brand-visual-director"
+  ],
+  "agents": [
+    "conversion-copywriter"
+  ],
+  "externalSkillsSuggested": [
+    "ad-creative",
+    "paid-ads",
+    "social-content",
+    "email-sequence",
+    "launch-strategy"
+  ],
+  "maxSkills": 1,
+  "maxAgents": 1,
+  "advanced": true,
+  "note": "Pack para campanhas pagas. Gera estratégia e criativos — não executa campanhas automaticamente."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "marketplace-campaign-director",
+  "name": "Marketplace Campaign Director",
+  "version": "1.0.0",
+  "category": "marketing",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page"],
+  "stacks": ["tailwind"],
+  "description": "Adapter para campanhas, anúncios, social posts, email e estratégia de lançamento. Inspirado em ad-creative, paid-ads, social-content, email-sequence, launch-strategy, marketing-ideas.",
+  "maxDefaultUse": true,
+  "externalSkillsRef": [
+    "ad-creative",
+    "paid-ads",
+    "social-content",
+    "email-sequence",
+    "launch-strategy",
+    "marketing-ideas"
+  ],
+  "riskLevel": "low",
+  "autoExecuteAllowed": true,
+  "phase": 14
+}

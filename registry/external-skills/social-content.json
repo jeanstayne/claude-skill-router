@@ -1,0 +1,28 @@
+{
+  "id": "social-content",
+  "name": "Social Content",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "social-content",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill social-content",
+  "category": "social",
+  "subcategories": [
+    "social",
+    "content",
+    "instagram",
+    "linkedin",
+    "tiktok"
+  ],
+  "bestFor": [
+    "create-social-content",
+    "create-launch-strategy"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Social media content strategy — posts, Reels, carousels, stories."
+}

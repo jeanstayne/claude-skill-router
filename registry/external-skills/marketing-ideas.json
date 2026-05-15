@@ -1,0 +1,27 @@
+{
+  "id": "marketing-ideas",
+  "name": "Marketing Ideas",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "marketing-ideas",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill marketing-ideas",
+  "category": "marketing",
+  "subcategories": [
+    "ideas",
+    "creative",
+    "campaign",
+    "brainstorm"
+  ],
+  "bestFor": [
+    "create-launch-strategy",
+    "create-social-content"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Creative marketing ideas and campaign concepts."
+}

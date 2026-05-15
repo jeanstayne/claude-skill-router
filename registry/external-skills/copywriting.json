@@ -1,0 +1,29 @@
+{
+  "id": "copywriting",
+  "name": "Copywriting",
+  "source": "skills.sh",
+  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "skillPath": "copywriting",
+  "installCommand": "npx skills add https://github.com/coreyhaines31/marketingskills --skill copywriting",
+  "category": "marketing",
+  "subcategories": [
+    "copywriting",
+    "headlines",
+    "cta",
+    "landing-page-copy"
+  ],
+  "bestFor": [
+    "improve-headlines",
+    "improve-marketing-copy",
+    "create-landing-page",
+    "improve-landing-page"
+  ],
+  "riskLevel": "low",
+  "requiresExternalCli": false,
+  "requiresLogin": false,
+  "requiresNetwork": false,
+  "autoInstallAllowed": false,
+  "autoExecuteAllowed": false,
+  "useAsReference": true,
+  "notes": "Conversion copywriting for landing pages, headlines, CTAs."
+}

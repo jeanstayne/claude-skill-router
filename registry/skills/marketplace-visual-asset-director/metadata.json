@@ -1,0 +1,21 @@
+{
+  "id": "marketplace-visual-asset-director",
+  "name": "Marketplace Visual Asset Director",
+  "version": "1.0.0",
+  "category": "image",
+  "projectTypes": ["landing-page", "institutional-site", "ecommerce-page"],
+  "stacks": ["tailwind"],
+  "description": "Adapter para briefs de imagem, prompts visuais, hero visual, banners e direção de fotografia. Inspirado em canvas-design, theme-factory, gpt-image-2, ai-image-generation, ad-creative, stitch-design-taste. NUNCA executa gerador externo sem confirmação.",
+  "maxDefaultUse": true,
+  "externalSkillsRef": [
+    "canvas-design",
+    "theme-factory",
+    "gpt-image-2",
+    "ai-image-generation",
+    "ad-creative",
+    "stitch-design-taste"
+  ],
+  "riskLevel": "medium",
+  "autoExecuteAllowed": false,
+  "phase": 14
+}

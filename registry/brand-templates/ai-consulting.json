@@ -1,0 +1,23 @@
+{
+  "id": "ai-consulting",
+  "name": "AI Consulting",
+  "segments": ["inteligência artificial", "consultoria de IA", "transformação digital", "automação", "machine learning"],
+  "bestForBrands": ["NanoAI", "consultorias de IA", "empresas de data science"],
+  "visualPersonality": ["visionário", "estratégico", "futurista", "pragmático", "confiável"],
+  "recommendedPalette": {
+    "primary": "#0f172a",
+    "accent": "#8b5cf6",
+    "background": "#f8fafc"
+  },
+  "typography": {
+    "headline": "Inter Tight",
+    "body": "Inter"
+  },
+  "componentStyle": {
+    "buttons": "rounded-lg font-semibold bg-gradient-to-r from-violet-600 to-indigo-600 text-white shadow-md hover:shadow-lg transition-all",
+    "cards": "bg-white rounded-xl shadow-sm border border-violet-50 hover:shadow-md transition-shadow",
+    "sections": "py-20 md:py-28"
+  },
+  "recommendedSections": ["Hero com headline provocativa", "O problema (sem IA)", "A solução (com IA)", "Metodologia (3-4 passos)", "Cases de resultado (antes/depois)", "Time de especialistas", "FAQ sobre IA", "CTA para diagnóstico gratuito"],
+  "avoid": ["hype vazio sem substância", "visual muito corporativo tradicional", "jargão técnico sem explicação", "promessas não realistas"]
+}
